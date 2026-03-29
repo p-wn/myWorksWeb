@@ -1,12 +1,15 @@
 # Handle line endings automatically for files detected as text
-# and leave binary files untouched.
-* text=auto
+# and force LF for consistency across environments.
+* text=auto eol=lf
 
-# Explicitly declare binary files
-*.png binary
-*.jpg binary
-*.jpeg binary
-*.gif binary
-*.webp binary
-*.ico binary
-*.pdf binary
+# Explicitly declare binary files and disable all text processing
+*.png -text -diff -merge
+*.jpg -text -diff -merge
+*.jpeg -text -diff -merge
+*.gif -text -diff -merge
+*.webp -text -diff -merge
+*.ico -text -diff -merge
+*.pdf -text -diff -merge
+*.zip -text -diff -merge
+*.rar -text -diff -merge
+*.7z -text -diff -merge
