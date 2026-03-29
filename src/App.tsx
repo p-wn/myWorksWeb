@@ -1,22 +1,10 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Download, Github, Mail, Palette, Gamepad2, ChevronRight, Twitter, Calendar, X, ZoomIn, ChevronLeft } from "lucide-react";
+import { Download, Github, Mail, Palette, Gamepad2, ChevronRight, Calendar, X, ZoomIn, ChevronLeft } from "lucide-react";
 
 const SKINS = [
   {
     id: 1,
-    title: "WMII PLAY SKIN",
-    category: "LunaticRave2",
-    description: "LR2FHD(1080p) 플레이스킨. SP AC비율만 완성되어있음",
-    images: [
-      "/images/skins/wmii-play-lr2/01.webp",
-      "/images/skins/wmii-play-lr2/02.webp",
-    ],
-    downloadUrl: "https://drive.google.com/file/d/1VzsPuIfWGFZ5fWV6kWemFDYQY6EuGl_a/view?usp=sharing",
-    date: "26.03.28",
-  },
-  {
-    id: 2,
     title: "WMII PLAY SKIN",
     category: "Beatoraja",
     description: "Beatoraja용으로 변환한 lr2skin스킨. SP AC 비율만",
@@ -25,6 +13,18 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/02.webp",
     ],
     downloadUrl: "https://drive.google.com/file/d/1p4nIKF2HTnJgJHsasUrsb1FQTcgTbLKp/view?usp=sharing",
+    date: "26.03.28",
+  },
+  {
+    id: 2,
+    title: "WMII PLAY SKIN",
+    category: "LunaticRave2",
+    description: "LR2FHD(1080p) 플레이스킨. SP AC비율만 완성되어있음",
+    images: [
+      "/images/skins/wmii-play-lr2/01.webp",
+      "/images/skins/wmii-play-lr2/02.webp",
+    ],
+    downloadUrl: "https://drive.google.com/file/d/1VzsPuIfWGFZ5fWV6kWemFDYQY6EuGl_a/view?usp=sharing",
     date: "26.03.28",
   },
   {
@@ -92,6 +92,17 @@ const SKINS = [
     date: "14.04.24",
   },
 ];
+
+const XLogo = ({ size = 20 }: { size?: number }) => (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="currentColor"
+  >
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+);
 
 export default function App() {
   const [filter, setFilter] = useState("All");
@@ -220,23 +231,65 @@ export default function App() {
       </nav>
 
       <main className="pt-16">
-        {/* BMS Skins Section */}
-        <section id="skins" className="py-24 px-6 bg-slate-50 min-h-[60vh]">
+        {/* New Featured Section */}
+        <section className="pt-20 pb-12 px-6 bg-white">
           <div className="max-w-6xl mx-auto">
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+            <div className="flex items-center gap-3 mb-10">
+              <motion.span 
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                className="px-3 py-1 bg-point text-white text-[10px] font-black rounded-full uppercase tracking-widest animate-pulse"
+              >
+                New
+              </motion.span>
+              <h2 className="text-4xl font-black tracking-tighter uppercase text-slate-900">WMII</h2>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-10">
+              {SKINS.filter(s => [1, 2].includes(s.id)).map((skin) => (
+                <motion.div
+                  key={`featured-${skin.id}`}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="relative group cursor-pointer"
+                  onClick={() => openModal(skin)}
+                >
+                  <div className="aspect-video overflow-hidden rounded-3xl border border-slate-100 shadow-2xl shadow-teal-500/10">
+                    <img 
+                      src={skin.images[0]} 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8">
+                      <span className="text-point font-black text-[10px] tracking-widest uppercase mb-2">{skin.category}</span>
+                      <h3 className="text-2xl font-bold text-white mb-2">{skin.title}</h3>
+                      <p className="text-white/60 text-sm line-clamp-1">{skin.description}</p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* BMS Skins Section */}
+        <section id="skins" className="py-24 px-6 bg-slate-50 min-h-[60vh] border-t border-slate-100">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
               <div>
-                <h2 className="text-3xl font-bold mb-4">BMS Skins</h2>
-                <p className="text-slate-500">현재 공개중인 BMS 스킨들</p>
+                <h2 className="text-3xl font-black tracking-tight mb-2">ALL SKINS</h2>
+                <p className="text-slate-400 text-sm">전체 스킨 라이브러리</p>
               </div>
-              <div className="flex gap-2">
+              <div className="flex p-1 bg-slate-200/50 rounded-xl backdrop-blur-sm">
                 {["All", "LunaticRave2", "Beatoraja"].map((tab) => (
                   <button 
                     key={tab}
                     onClick={() => setFilter(tab)}
-                    className={`px-4 py-2 rounded-lg text-sm font-medium border transition-all ${
+                    className={`px-6 py-2 rounded-lg text-xs font-bold transition-all ${
                       filter === tab 
-                        ? "bg-point border-point text-white" 
-                        : "bg-white border-slate-100 text-slate-600 hover:border-point hover:text-point"
+                        ? "bg-white text-point shadow-sm" 
+                        : "text-slate-500 hover:text-slate-900"
                     }`}
                   >
                     {tab}
@@ -313,7 +366,7 @@ export default function App() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 px-12 py-4 bg-slate-50 rounded-2xl font-semibold hover:bg-slate-900 hover:text-white transition-all"
               >
-                <Twitter size={20} /> @wisp_13
+                <XLogo size={20} /> @wisp_13
               </a>
             </div>
           </div>
