@@ -1,0 +1,17 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --color-point: #008080;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-white text-slate-900 antialiased;
+  }
+}
+
+.teal-gradient {
+  background: linear-gradient(135deg, #008080 0%, #00a0a0 100%);
+}

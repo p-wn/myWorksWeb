@@ -1,0 +1,12 @@
+# Handle line endings automatically for files detected as text
+# and leave binary files untouched.
+* text=auto
+
+# Explicitly declare binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
