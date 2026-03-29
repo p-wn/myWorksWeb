@@ -109,6 +109,20 @@ export default function App() {
   const [selectedSkin, setSelectedSkin] = useState<typeof SKINS[0] | null>(null);
   const [currentImgIdx, setCurrentImgIdx] = useState(0);
 
+  const scrollToSkin = (skin: typeof SKINS[0]) => {
+    setFilter("All");
+    setTimeout(() => {
+      const element = document.getElementById(`skin-${skin.id}`);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        element.classList.add('ring-4', 'ring-point', 'ring-offset-2');
+        setTimeout(() => {
+          element.classList.remove('ring-4', 'ring-point', 'ring-offset-2');
+        }, 2000);
+      }
+    }, 100);
+  };
+
   const filteredSkins = filter === "All" 
     ? SKINS 
     : SKINS.filter(skin => skin.category === filter);
@@ -263,7 +277,15 @@ export default function App() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8">
                       <span className="text-point font-black text-[10px] tracking-widest uppercase mb-2">{skin.category}</span>
-                      <h3 className="text-2xl font-bold text-white mb-2">{skin.title}</h3>
+                      <h3 
+                        className="text-2xl font-bold text-white mb-2 hover:text-point transition-colors cursor-pointer inline-block"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          scrollToSkin(skin);
+                        }}
+                      >
+                        {skin.title}
+                      </h3>
                       <p className="text-white/60 text-sm line-clamp-1">{skin.description}</p>
                     </div>
                   </div>
@@ -302,6 +324,7 @@ export default function App() {
               {filteredSkins.map((skin, idx) => (
                 <motion.div
                   key={skin.id}
+                  id={`skin-${skin.id}`}
                   layout
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
