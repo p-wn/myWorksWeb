@@ -1,6 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Download, Github, Mail, Palette, Gamepad2, ChevronRight, Twitter, Calendar, X, ZoomIn } from "lucide-react";
+import { Download, Github, Mail, Palette, Gamepad2, ChevronRight, Twitter, Calendar, X, ZoomIn, ChevronLeft } from "lucide-react";
 
 const SKINS = [
   {
@@ -8,7 +8,11 @@ const SKINS = [
     title: "WMII PLAY SKIN",
     category: "LunaticRave2",
     description: "LR2FHD(1080p) 플레이스킨. SP AC비율만 완성되어있음",
-    image: "https://picsum.photos/seed/wmii-lr2/600/400",
+    images: [
+      "/images/skins/wmii-play-lr2/01.png",
+      "/images/skins/wmii-play-lr2/02.png",
+      "/images/skins/wmii-play-lr2/03.png",
+    ],
     downloadUrl: "https://drive.google.com/file/d/1VzsPuIfWGFZ5fWV6kWemFDYQY6EuGl_a/view?usp=sharing",
     date: "26.03.28",
   },
@@ -17,7 +21,10 @@ const SKINS = [
     title: "WMII PLAY SKIN",
     category: "Beatoraja",
     description: "FHD skin. Beatoraja용으로 변환한 lr2skin스킨. SP AC 비율만",
-    image: "https://picsum.photos/seed/wmii-beato/600/400",
+    images: [
+      "/images/skins/wmii-play-beato/01.png",
+      "/images/skins/wmii-play-beato/02.png",
+    ],
     downloadUrl: "https://drive.google.com/file/d/1p4nIKF2HTnJgJHsasUrsb1FQTcgTbLKp/view?usp=sharing",
     date: "26.03.28",
   },
@@ -26,7 +33,11 @@ const SKINS = [
     title: "WMIX SKIN SET",
     category: "LunaticRave2",
     description: "LR2 HD(720P) 스킨 세트",
-    image: "https://picsum.photos/seed/wmix-hd/600/400",
+    images: [
+      "/images/skins/wmix-hd/01.png",
+      "/images/skins/wmix-hd/02.png",
+      "/images/skins/wmix-hd/03.png",
+    ],
     downloadUrl: "https://drive.google.com/file/d/14moYPndPvCT9S0vLmwD_3P7PPZBw0Or7/view?usp=sharing",
     date: "16.03.21",
   },
@@ -34,8 +45,11 @@ const SKINS = [
     id: 4,
     title: "SPD FRAME PLAY SKIN",
     category: "LunaticRave2",
-    description: "SD스킨. iidx21스타일을 오마쥬한 SP플레이스킨",
-    image: "https://picsum.photos/seed/spd-frame/600/400",
+    description: "SD스킨. iidx21스타일을 오마쥬한 SP/DP플레이스킨",
+    images: [
+      "/images/skins/spd-frame/01.png",
+      "/images/skins/spd-frame/02.png",
+    ],
     downloadUrl: "https://drive.google.com/file/d/1DJqWOwfqVtUKOQ2LbfM5_QPlBx4p4Tnq/view?usp=sharing",
     date: "14.11.13",
   },
@@ -44,7 +58,10 @@ const SKINS = [
     title: "SPD RESULT SKIN",
     category: "LunaticRave2",
     description: "SD스킨. iidx21스타일을 오마쥬한 리절트스킨",
-    image: "https://picsum.photos/seed/spd-result/600/400",
+    images: [
+      "/images/skins/spd-result/01.png",
+      "/images/skins/spd-result/02.png",
+    ],
     downloadUrl: "https://drive.google.com/file/d/1aZV06dcWqiJgO5PVbXjezcSfIGJLLzxN/view?usp=sharing",
     date: "14.05.07",
   },
@@ -53,7 +70,10 @@ const SKINS = [
     title: "tori FRAME PLAY SKIN",
     category: "LunaticRave2",
     description: "SD스킨. iidx20스타일을 오마쥬한 SP플레이스킨",
-    image: "https://picsum.photos/seed/tori-frame/600/400",
+    images: [
+      "/images/skins/tori-frame/01.png",
+      "/images/skins/tori-frame/02.png",
+    ],
     downloadUrl: "https://drive.google.com/file/d/1-18khJQ5GWD5OysVyIIS0mJxO53OgLKo/view?usp=sharing",
     date: "14.08.07",
   },
@@ -62,7 +82,10 @@ const SKINS = [
     title: "toricolor RESULT SKIN",
     category: "LunaticRave2",
     description: "SD스킨. iidx20스타일을 오마쥬한 리절트스킨",
-    image: "https://picsum.photos/seed/tori-result/600/400",
+    images: [
+      "/images/skins/tori-result/01.png",
+      "/images/skins/tori-result/02.png",
+    ],
     downloadUrl: "https://drive.google.com/file/d/1Bc12vea7PL-jnDnXfr2RUDwJuVN6fxka/view?usp=sharing",
     date: "14.04.24",
   },
@@ -70,44 +93,115 @@ const SKINS = [
 
 export default function App() {
   const [filter, setFilter] = useState("All");
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedSkin, setSelectedSkin] = useState<typeof SKINS[0] | null>(null);
+  const [currentImgIdx, setCurrentImgIdx] = useState(0);
 
   const filteredSkins = filter === "All" 
     ? SKINS 
     : SKINS.filter(skin => skin.category === filter);
 
+  const openModal = (skin: typeof SKINS[0]) => {
+    setSelectedSkin(skin);
+    setCurrentImgIdx(0);
+  };
+
+  const closeModal = () => {
+    setSelectedSkin(null);
+    setCurrentImgIdx(0);
+  };
+
+  const nextImg = (e?: React.MouseEvent) => {
+    e?.stopPropagation();
+    if (!selectedSkin) return;
+    setCurrentImgIdx((prev) => (prev + 1) % selectedSkin.images.length);
+  };
+
+  const prevImg = (e?: React.MouseEvent) => {
+    e?.stopPropagation();
+    if (!selectedSkin) return;
+    setCurrentImgIdx((prev) => (prev - 1 + selectedSkin.images.length) % selectedSkin.images.length);
+  };
+
   return (
     <div className="min-h-screen selection:bg-teal-100 selection:text-teal-900">
       {/* Image Preview Modal */}
       <AnimatePresence>
-        {selectedImage && (
+        {selectedSkin && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={() => setSelectedImage(null)}
-            className="fixed inset-0 z-[100] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 md:p-12 cursor-zoom-out"
+            onClick={closeModal}
+            className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-md flex flex-col items-center justify-center p-4 md:p-8 cursor-zoom-out"
           >
-            <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              className="relative max-w-full max-h-full"
-              onClick={(e) => e.stopPropagation()}
-            >
+            <div className="relative w-full max-w-5xl flex flex-col items-center gap-6" onClick={(e) => e.stopPropagation()}>
               <button
-                onClick={() => setSelectedImage(null)}
-                className="absolute -top-12 right-0 text-white/70 hover:text-white transition-colors p-2"
+                onClick={closeModal}
+                className="absolute -top-12 right-0 text-white/70 hover:text-white transition-colors p-2 z-[110]"
               >
                 <X size={32} />
               </button>
-              <img
-                src={selectedImage}
-                alt="Preview"
-                className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl"
-                referrerPolicy="no-referrer"
-              />
-            </motion.div>
+
+              {/* Main Image Container */}
+              <div className="relative w-full aspect-video flex items-center justify-center group/modal">
+                <AnimatePresence mode="wait">
+                  <motion.img
+                    key={currentImgIdx}
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -20 }}
+                    transition={{ duration: 0.2 }}
+                    src={selectedSkin.images[currentImgIdx]}
+                    alt={`Preview ${currentImgIdx + 1}`}
+                    className="max-w-full max-h-[70vh] object-contain rounded-lg shadow-2xl"
+                    referrerPolicy="no-referrer"
+                  />
+                </AnimatePresence>
+
+                {/* Navigation Arrows */}
+                {selectedSkin.images.length > 1 && (
+                  <>
+                    <button
+                      onClick={prevImg}
+                      className="absolute left-4 p-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-md transition-all opacity-0 group-hover/modal:opacity-100"
+                    >
+                      <ChevronLeft size={24} />
+                    </button>
+                    <button
+                      onClick={nextImg}
+                      className="absolute right-4 p-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-md transition-all opacity-0 group-hover/modal:opacity-100"
+                    >
+                      <ChevronRight size={24} />
+                    </button>
+                  </>
+                )}
+              </div>
+
+              {/* Thumbnails */}
+              {selectedSkin.images.length > 1 && (
+                <div className="flex gap-3 overflow-x-auto pb-2 max-w-full">
+                  {selectedSkin.images.map((img, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setCurrentImgIdx(idx)}
+                      className={`relative w-20 aspect-video rounded-md overflow-hidden border-2 transition-all flex-shrink-0 ${
+                        currentImgIdx === idx ? "border-point scale-110" : "border-transparent opacity-50 hover:opacity-100"
+                      }`}
+                    >
+                      <img src={img} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {/* Info */}
+              <div className="text-center text-white">
+                <h3 className="text-xl font-bold mb-1">{selectedSkin.title}</h3>
+                <p className="text-sm text-white/60">
+                  {currentImgIdx + 1} / {selectedSkin.images.length}
+                </p>
+              </div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -161,16 +255,21 @@ export default function App() {
                 >
                   <div 
                     className="aspect-[4/3] overflow-hidden relative cursor-pointer group/img"
-                    onClick={() => setSelectedImage(skin.image)}
+                    onClick={() => openModal(skin)}
                   >
                     <img 
-                      src={skin.image} 
+                      src={skin.images[0]} 
                       alt={skin.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-black/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
-                      <ZoomIn className="text-white" size={32} />
+                      <div className="flex flex-col items-center gap-2">
+                        <ZoomIn className="text-white" size={32} />
+                        <span className="text-white text-xs font-bold bg-black/40 px-2 py-1 rounded-md backdrop-blur-sm">
+                          {skin.images.length} Images
+                        </span>
+                      </div>
                     </div>
                     <div className="absolute top-4 left-4">
                       <span className="px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-[10px] font-bold text-point uppercase tracking-wider">
