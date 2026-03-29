@@ -279,7 +279,7 @@ export default function App() {
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
               <div>
                 <h2 className="text-3xl font-black tracking-tight mb-2">ALL SKINS</h2>
-                <p className="text-slate-400 text-sm">전체 스킨 라이브러리</p>
+                <p className="text-slate-400 text-sm">만들었던 스킨들</p>
               </div>
               <div className="flex p-1 bg-slate-200/50 rounded-xl backdrop-blur-sm">
                 {["All", "LunaticRave2", "Beatoraja"].map((tab) => (
