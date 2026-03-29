@@ -19,7 +19,7 @@ const SKINS = [
     id: 2,
     title: "WMII PLAY SKIN",
     category: "Beatoraja",
-    description: "FHD skin. Beatoraja용으로 변환한 lr2skin스킨. SP AC 비율만",
+    description: "Beatoraja용으로 변환한 lr2skin스킨. SP AC 비율만",
     images: [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
