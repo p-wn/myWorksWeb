@@ -24,7 +24,7 @@ const SKINS = [
       "/images/skins/wmii-play-lr2/01.webp",
       "/images/skins/wmii-play-lr2/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1T5thYur6x1VjbezdU2YOVlfZ5jcqw7v4/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/file/d/1GuVPULUPx1Sv_Ewmc1enjPizFkMrpqgD/view?usp=sharing",
     date: "26.04.10",
   },
   {
