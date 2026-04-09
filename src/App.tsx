@@ -5,9 +5,9 @@ import { Download, Github, Mail, Palette, Gamepad2, ChevronRight, Calendar, X, Z
 const SKINS = [
   {
     id: 1,
-    title: "WMII PLAY SKIN",
+    title: "WMII PLAY SKIN for beatoraja",
     category: "Beatoraja",
-    description: "Beatoraja용으로 수정한 플레이스킨. SP/DP AC비율. fast/slow는 judge detail을 off로하고 Display F/S를 On",
+    description: "Beatoraja용 FHD 플레이스킨. SP/DP AC비율\nlr2skin기반으로 fast/slow는 judge detail을 off로하고 Display F/S를 On으로",
     images: [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
@@ -17,7 +17,7 @@ const SKINS = [
   },
   {
     id: 2,
-    title: "WMII PLAY SKIN",
+    title: "WMII PLAY SKIN for LR2FHD",
     category: "LunaticRave2",
     description: "LR2FHD(1080p) 플레이스킨. SP/DP AC비율",
     images: [
@@ -256,7 +256,7 @@ export default function App() {
               >
                 New
               </motion.span>
-              <h2 className="text-4xl font-black tracking-tighter uppercase text-slate-900">WMII</h2>
+              <h2 className="text-4xl font-black tracking-tighter uppercase text-slate-900">WMII SP/DP PLAY SKIN</h2>
             </div>
             
             <div className="grid md:grid-cols-2 gap-10">
@@ -286,7 +286,7 @@ export default function App() {
                       >
                         {skin.title}
                       </h3>
-                      <p className="text-white/60 text-sm line-clamp-1">{skin.description}</p>
+                      <p className="text-white/60 text-sm whitespace-pre-wrap">{skin.description}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -356,13 +356,13 @@ export default function App() {
                     </div>
                   </div>
                   <div className="p-6">
-                    <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-xl font-bold group-hover:text-point transition-colors">{skin.title}</h3>
-                      <span className="text-[10px] font-mono text-slate-400 flex items-center gap-1">
-                        <Calendar size={12} /> {skin.date}
+                    <div className="flex flex-col mb-4">
+                      <h3 className="text-xl font-bold group-hover:text-point transition-colors whitespace-pre-wrap">{skin.title}</h3>
+                      <span className="text-xs font-mono text-slate-400 mt-1">
+                        UPDATE {skin.date}
                       </span>
                     </div>
-                    <p className="text-sm text-slate-500 mb-6 line-clamp-2">
+                    <p className="text-sm text-slate-500 mb-6 whitespace-pre-wrap">
                       {skin.description}
                     </p>
                     <a 
