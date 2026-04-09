@@ -104,6 +104,74 @@ const XLogo = ({ size = 20 }: { size?: number }) => (
   </svg>
 );
 
+const FeaturedCard = ({ skin, openModal, scrollToSkin }: { 
+  skin: typeof SKINS[0], 
+  openModal: (s: typeof SKINS[0]) => void,
+  scrollToSkin: (s: typeof SKINS[0]) => void
+}) => {
+  const [imgIdx, setImgIdx] = useState(0);
+
+  React.useEffect(() => {
+    if (skin.images.length <= 1) return;
+    const timer = setInterval(() => {
+      setImgIdx((prev) => (prev + 1) % skin.images.length);
+    }, 4000); // 4 seconds interval
+    return () => clearInterval(timer);
+  }, [skin.images.length]);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      className="relative group cursor-pointer"
+      onClick={() => openModal(skin)}
+    >
+      <div className="aspect-video overflow-hidden rounded-3xl border border-slate-100 shadow-2xl shadow-teal-500/10 relative">
+        <AnimatePresence mode="wait">
+          <motion.img 
+            key={imgIdx}
+            src={skin.images[imgIdx]} 
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            className="absolute inset-0 w-full h-full object-cover"
+            referrerPolicy="no-referrer"
+          />
+        </AnimatePresence>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8">
+          <span className="text-point font-black text-[10px] tracking-widest uppercase mb-2">{skin.category}</span>
+          <h3 
+            className="text-2xl font-bold text-white mb-2 hover:text-point transition-colors cursor-pointer inline-block"
+            onClick={(e) => {
+              e.stopPropagation();
+              scrollToSkin(skin);
+            }}
+          >
+            {skin.title}
+          </h3>
+          <p className="text-white/60 text-sm whitespace-pre-wrap line-clamp-1">{skin.description}</p>
+        </div>
+        
+        {/* Progress indicators */}
+        {skin.images.length > 1 && (
+          <div className="absolute top-6 right-8 flex gap-1.5">
+            {skin.images.map((_, i) => (
+              <div 
+                key={i}
+                className={`h-1 rounded-full transition-all duration-500 ${
+                  i === imgIdx ? "w-6 bg-point" : "w-2 bg-white/30"
+                }`}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+    </motion.div>
+  );
+};
+
 export default function App() {
   const [filter, setFilter] = useState("All");
   const [selectedSkin, setSelectedSkin] = useState<typeof SKINS[0] | null>(null);
@@ -261,35 +329,12 @@ export default function App() {
             
             <div className="grid md:grid-cols-2 gap-10">
               {SKINS.filter(s => [1, 2].includes(s.id)).map((skin) => (
-                <motion.div
-                  key={`featured-${skin.id}`}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  className="relative group cursor-pointer"
-                  onClick={() => openModal(skin)}
-                >
-                  <div className="aspect-video overflow-hidden rounded-3xl border border-slate-100 shadow-2xl shadow-teal-500/10">
-                    <img 
-                      src={skin.images[0]} 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                      referrerPolicy="no-referrer"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8">
-                      <span className="text-point font-black text-[10px] tracking-widest uppercase mb-2">{skin.category}</span>
-                      <h3 
-                        className="text-2xl font-bold text-white mb-2 hover:text-point transition-colors cursor-pointer inline-block"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          scrollToSkin(skin);
-                        }}
-                      >
-                        {skin.title}
-                      </h3>
-                      <p className="text-white/60 text-sm whitespace-pre-wrap">{skin.description}</p>
-                    </div>
-                  </div>
-                </motion.div>
+                <FeaturedCard 
+                  key={`featured-${skin.id}`} 
+                  skin={skin} 
+                  openModal={openModal} 
+                  scrollToSkin={scrollToSkin} 
+                />
               ))}
             </div>
           </div>
