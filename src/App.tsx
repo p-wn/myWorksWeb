@@ -12,7 +12,7 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/12pu5Ex5ez6MZWUII-r9GunRPp6u6H8IT/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/file/d/1rDBU3biMrVsj32P1nXUFakJrkBA4TlFv/view?usp=sharing",
     date: "26.04.10",
   },
   {
