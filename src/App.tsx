@@ -12,8 +12,8 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1GyhOXy0dankOtNALvnVul6Bc_vLikGRe/view?usp=sharing",
-    date: "26.04.12",
+    downloadUrl: "https://drive.google.com/file/d/12UwLyiIxKOf1xLf7H8zkwcKnoxeSXJME/view?usp=sharing",
+    date: "26.04.14",
   },
   {
     id: 2,
@@ -24,8 +24,8 @@ const SKINS = [
       "/images/skins/wmii-play-lr2/01.webp",
       "/images/skins/wmii-play-lr2/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1u-8aqrda59ZxOFmhznvNZG1d5gEYJaTu/view?usp=sharing",
-    date: "26.04.12",
+    downloadUrl: "https://drive.google.com/file/d/1Z_vYBfpXxYnu0q1dpaLKSFitT3dLBKbq/view?usp=sharing",
+    date: "26.04.14",
   },
   {
     id: 3,
