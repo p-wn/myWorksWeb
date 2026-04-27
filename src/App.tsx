@@ -343,6 +343,20 @@ export default function App() {
         {/* BMS Skins Section */}
         <section id="skins" className="py-24 px-6 bg-slate-50 min-h-[60vh] border-t border-slate-100">
           <div className="max-w-6xl mx-auto">
+            {/* Update Log */}
+            <div className="mb-16 p-6 bg-white rounded-2xl border border-slate-100 shadow-sm">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="w-2 h-2 rounded-full bg-point" />
+                <h3 className="text-sm font-black tracking-widest text-slate-900 uppercase">Update Log</h3>
+              </div>
+              <div className="space-y-3">
+                <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.04.10</span>
+                  <p className="text-sm text-slate-600 font-medium">WMII PLAY SKIN 스코어 그래프 배경 옵션 추가</p>
+                </div>
+              </div>
+            </div>
+
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
               <div>
                 <h2 className="text-3xl font-black tracking-tight mb-2">ALL SKINS</h2>
