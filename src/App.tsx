@@ -363,23 +363,13 @@ export default function App() {
                 <h3 className="text-sm font-black tracking-widest text-slate-900 uppercase">Update</h3>
               </div>
               <div className="space-y-3">
-               <div className="flex flex-col gap-2">
-               <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit block">
-                 26.05.06
-                </span>
-                <p className="text-sm text-slate-600 font-medium">
-                  WMII RESULT SKIN 추가 / WMII PLAY SKIN LR2FHD용 코스모드에서 judge가 veryhard로 무조건 뜨는걸 안뜨게 수정
-                  </p>
-               </div>
-                 <div>
-                 <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit block">
-                   26.04.27
-                   </span>
-                 <p className="text-sm text-slate-600 font-medium">
-                    WMII PLAY SKIN 스코어 그래프 배경 옵션 추가
-                 </p>
-                </div>
-
+                <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.06</span>
+                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 추가 /  WMII PLAY SKIN LR2FHD용 코스모드에서 judge가 veryhard로 무조건 뜨는걸 안뜨게 수정</p>
+                </div>  
+                <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.04.27</span>
+                  <p className="text-sm text-slate-600 font-medium">WMII PLAY SKIN 스코어 그래프 배경 옵션 추가</p>
                 </div>
               </div>
             </div>
