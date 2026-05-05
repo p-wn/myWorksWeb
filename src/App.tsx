@@ -37,8 +37,8 @@ const SKINS = [
       "/images/skins/wmii-play-lr2/01.webp",
       "/images/skins/wmii-play-lr2/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1KHLWGQyglSdrxabgPNbpNoDz5yKoZqdk/view?usp=sharing",
-    date: "26.04.27",
+    downloadUrl: "https://drive.google.com/file/d/1vShEEwNz8jef82qJnEV0mPgMnn0IT5Op/view?usp=sharing",
+    date: "26.05.06",
   },
   {
     id: 3,
@@ -364,6 +364,8 @@ export default function App() {
               </div>
               <div className="space-y-3">
                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.06</span>
+                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 추가 /  WMII PLAY SKIN LR2FHD용 코스모드에서 judge가 veryhard로 무조건 뜨는걸 안뜨게 수정</p>
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.04.27</span>
                   <p className="text-sm text-slate-600 font-medium">WMII PLAY SKIN 스코어 그래프 배경 옵션 추가</p>
                 </div>
