@@ -3,6 +3,19 @@ import { motion, AnimatePresence } from "motion/react";
 import { Download, Github, Mail, Palette, Gamepad2, ChevronRight, Calendar, X, ZoomIn, ChevronLeft } from "lucide-react";
 
 const SKINS = [
+    {
+    id: 1,
+    title: "WMII RESULT SKIN for beatoraja",
+    category: "Beatoraja",
+    description: "Beatoraja용 FHD 리절트스킨. 컨트롤러 select나 키보드 w키로 정보창 전환가능",
+    images: [
+      "/images/skins/wmii-result-beatoraja/01.webp",
+      "/images/skins/wmii-result-beatoraja/02.webp",
+      "/images/skins/wmii-result-beatoraja/03.webp",
+    ],
+    downloadUrl: "https://drive.google.com/file/d/1feRxSqxgtzl15hWMOjXqP9Hi7tRkjCV7/view?usp=sharing",
+    date: "26.05.6",
+  },
   {
     id: 1,
     title: "WMII PLAY SKIN for beatoraja",
