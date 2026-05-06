@@ -13,7 +13,7 @@ const SKINS = [
       "/images/skins/wmii-result-beatoraja/02.webp",
       "/images/skins/wmii-result-beatoraja/03.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1LUKetn9IFoC71xkIKpmlM3CPxRuI0lRZ/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/file/d/1LPM--2jgWpvfv-OkXTzHO-zErJDZAIVZ/view?usp=sharing",
     date: "26.05.07",
   },
   {
@@ -25,7 +25,7 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1zS85fH1o7GQHL-V1X6Y9tV9SSV5B70s6/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/file/d/1qWpZdRdvhwnKg37C6bPRZLfE4VEEDW-Y/view?usp=sharing",
     date: "26.05.07",
   },
   {
@@ -37,8 +37,8 @@ const SKINS = [
       "/images/skins/wmii-play-lr2/01.webp",
       "/images/skins/wmii-play-lr2/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1vShEEwNz8jef82qJnEV0mPgMnn0IT5Op/view?usp=sharing",
-    date: "26.05.06",
+    downloadUrl: "https://drive.google.com/file/d/1UhKTvQjHJ_fyBpPO3GImqFS3k-SdVD51/view?usp=sharing",
+    date: "26.05.07",
   },
   {
     id: 3,
@@ -365,7 +365,7 @@ export default function App() {
               <div className="space-y-3">
                  <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.07</span>
-                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 단위인정에서 게이지명이 a-easy로 뜨는것 class gauge로 뜨게 변경, misscount가 +1이상일때만 빨간색으로 뜨도록 변경, 랜덤 패턴이 버튼색도 바뀌도록 변경 / WMII PLAY SKIN Betoraja용 단위에서 게이지명이 class gauge로 뜨도록 수정</p>
+                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 단위인정에서 게이지명이 a-easy로 뜨는것 (ex)class gauge로 뜨게 변경, misscount가 +1이상일때만 빨간색으로 뜨도록 변경, 랜덤 패턴이 버튼색도 바뀌도록 변경 / WMII PLAY SKIN Betoraja용 단위에서 게이지명이 class gauge로 뜨도록 수정, BEGINNER 오타수정(lr2fhd버전 공통)</p>
                 </div>  
                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.06</span>
