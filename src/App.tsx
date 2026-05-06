@@ -13,8 +13,8 @@ const SKINS = [
       "/images/skins/wmii-result-beatoraja/02.webp",
       "/images/skins/wmii-result-beatoraja/03.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1dLWThE1pz6zGBon6V4GzPpKa0BRYbeg9/view?usp=sharing",
-    date: "26.05.06",
+    downloadUrl: "https://drive.google.com/file/d/1LUKetn9IFoC71xkIKpmlM3CPxRuI0lRZ/view?usp=sharing",
+    date: "26.05.07",
   },
   {
     id: 1,
@@ -25,8 +25,8 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1bHHQQo1Z7UOFB6cURqHQQrIE1io9c-Uh/view?usp=sharing",
-    date: "26.04.27",
+    downloadUrl: "https://drive.google.com/file/d/1zS85fH1o7GQHL-V1X6Y9tV9SSV5B70s6/view?usp=sharing",
+    date: "26.05.07",
   },
   {
     id: 2,
@@ -363,6 +363,10 @@ export default function App() {
                 <h3 className="text-sm font-black tracking-widest text-slate-900 uppercase">Update</h3>
               </div>
               <div className="space-y-3">
+                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.07</span>
+                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 단위인정에서 게이지명이 a-easy로 뜨는것 class gauge로 뜨게 변경, misscount가 +1이상일때만 빨간색으로 뜨도록 변경, 랜덤 패턴이 버튼색도 바뀌도록 변경 / WMII PLAY SKIN Betoraja용 단위에서 게이지명이 class gauge로 뜨도록 수정</p>
+                </div>  
                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.06</span>
                   <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 추가 /  WMII PLAY SKIN LR2FHD용 코스모드에서 judge가 veryhard로 무조건 뜨는걸 안뜨게 수정</p>
