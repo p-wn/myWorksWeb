@@ -7,15 +7,15 @@ const SKINS = [
     id: 1,
     title: "WMII RESULT SKIN for beatoraja",
     category: "Beatoraja",
-    description: "Beatoraja용 FHD 리절트스킨. 컨트롤러 select나 키보드 w키로 정보창 전환가능",
+    description: "Beatoraja용 FHD 리절트스킨. 컨트롤러 select나 키보드 w키로 정보창 전환가능, 코스리절트 사용시 각 스테이지 정보는 WMII 리절트를 사용해야만 표시가능",
     images: [
       "/images/skins/wmii-result-beatoraja/01.webp",
       "/images/skins/wmii-result-beatoraja/02.webp",
       "/images/skins/wmii-result-beatoraja/03.webp",
       "/images/skins/wmii-result-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1EgacWrEkJZSczwUBPE6o1hhK_7zVdkKN/view?usp=sharing",
-    date: "26.05.09",
+    downloadUrl: "https://drive.google.com/file/d/1apxs4aeFvyP_KAa3nHZPA2Qz6LxTA6iA/view?usp=sharing",
+    date: "26.05.10",
   },
   {
     id: 1,
@@ -26,8 +26,8 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1z5Z6rzqbKiFV209p6D6iIVyrP9hPt_EP/view?usp=sharing",
-    date: "26.05.09",
+    downloadUrl: "https://drive.google.com/file/d/1ZkHgfdtyeFx4e8KOWxghZSZ4iRikWj79/view?usp=sharing",
+    date: "26.05.10",
   },
   {
     id: 2,
@@ -38,8 +38,8 @@ const SKINS = [
       "/images/skins/wmii-play-lr2/01.webp",
       "/images/skins/wmii-play-lr2/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1hnsICcEVBkNNUqNWrR2feq_vLhQIpsUw/view?usp=sharing",
-    date: "26.05.09",
+    downloadUrl: "https://drive.google.com/file/d/1c5GMCCe_iX0BXrDhHUbZ2BIFtpiQun40/view?usp=sharing",
+    date: "26.05.10",
   },
   {
     id: 3,
@@ -365,8 +365,8 @@ export default function App() {
               </div>
               <div className="space-y-3">
                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
-                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.09</span>
-                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 코스 리절트 추가 / WMII PLAY SKIN sp스킨 스코어그래프 그래프 시작지점 1픽셀 틈 수정</p>
+                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.10</span>
+                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 코스 리절트 추가 / WMII PLAY SKIN sp스킨 스코어그래프 그래프 시작지점 1픽셀 틈 수정, 5스테이지짜리 코스를 할 경우 4th stage표시가 이상한것을 수정</p>
                 </div>  
                  <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.07</span>
