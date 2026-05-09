@@ -370,7 +370,7 @@ export default function App() {
                 </div>  
                  <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.07</span>
-                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 단위인정에서 게이지명이 a-easy로 뜨는것 (ex)class gauge로 뜨게 변경, misscount가 +1이상일때만 빨간색으로 뜨도록 변경, 랜덤 패턴이 버튼색도 바뀌도록 변경 / WMII PLAY SKIN Betoraja용 단위에서 게이지명이 class gauge로 뜨도록 수정, BEGINNER 오타수정(lr2fhd버전 공통)</p>
+                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 단위인정에서 게이지명이 a-easy로 뜨는것 class gauge로 뜨게 변경, misscount가 +1이상일때만 빨간색으로 뜨도록 변경, 랜덤 패턴이 버튼색도 바뀌도록 변경 1st~final표기 추가/ WMII PLAY SKIN Betoraja용 단위에서 게이지명이 class gauge로 뜨도록 수정, BEGINNER 오타수정(lr2fhd버전 공통)</p>
                 </div>  
                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.06</span>
