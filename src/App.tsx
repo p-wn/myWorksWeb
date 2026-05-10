@@ -14,7 +14,7 @@ const SKINS = [
       "/images/skins/wmii-result-beatoraja/03.webp",
       "/images/skins/wmii-result-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1KR4Cok7ac9WgAAnykODjyajzr6jxlIkg/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/file/d/1XyQtBKKHiwYn6Cy7_kj5Zyfs7dXs4g3T/view?usp=sharing",
     date: "26.05.10",
   },
   {
@@ -364,6 +364,10 @@ export default function App() {
                 <h3 className="text-sm font-black tracking-widest text-slate-900 uppercase">Update</h3>
               </div>
               <div className="space-y-3">
+                <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.10</span>
+                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 일반리절트 다음랭크까지 차이 숫자 위치 오류난거 수정  </p>
+                </div>  
                   <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.10</span>
                   <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 코스리절트에서 기능하지않던 타겟 스코어 제거, 그외 미세 수정  </p>
