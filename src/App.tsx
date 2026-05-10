@@ -14,7 +14,7 @@ const SKINS = [
       "/images/skins/wmii-result-beatoraja/03.webp",
       "/images/skins/wmii-result-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1XyQtBKKHiwYn6Cy7_kj5Zyfs7dXs4g3T/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/file/d/1oKxMcMRz9n58qjZ1jIq3GqxCxXfgb7De/view?usp=sharing",
     date: "26.05.10",
   },
   {
