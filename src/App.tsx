@@ -14,7 +14,7 @@ const SKINS = [
       "/images/skins/wmii-result-beatoraja/03.webp",
       "/images/skins/wmii-result-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/11qq7UCmOwe8ngEJi1UXRDmJwvHds1Izf/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/file/d/1KR4Cok7ac9WgAAnykODjyajzr6jxlIkg/view?usp=sharing",
     date: "26.05.10",
   },
   {
@@ -364,6 +364,10 @@ export default function App() {
                 <h3 className="text-sm font-black tracking-widest text-slate-900 uppercase">Update</h3>
               </div>
               <div className="space-y-3">
+                  <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.10</span>
+                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 코스리절트에서 기능하지않던 타겟 스코어 제거, 그외 미세 수정  </p>
+                </div>  
                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.10</span>
                   <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 코스 리절트 추가 / WMII PLAY SKIN sp스킨 스코어그래프 그래프 시작지점 1픽셀 틈 수정, 5스테이지짜리 코스를 할 경우 4th stage표시가 이상한것을 수정</p>
