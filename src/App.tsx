@@ -366,7 +366,7 @@ export default function App() {
               <div className="space-y-3">
                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.10</span>
-                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 일반리절트 다음랭크까지 차이 숫자 위치 오류난거 수정  </p>
+                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 일반리절트 다음랭크까지 차이 숫자 및 인랭 점수차이 위치 오류난거 hotfix</p>
                 </div>  
                   <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.10</span>
