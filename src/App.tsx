@@ -14,8 +14,8 @@ const SKINS = [
       "/images/skins/wmii-result-beatoraja/03.webp",
       "/images/skins/wmii-result-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1oKxMcMRz9n58qjZ1jIq3GqxCxXfgb7De/view?usp=sharing",
-    date: "26.05.10",
+    downloadUrl: "https://drive.google.com/file/d/1dOSuvKiQtgxV6CVHkJVoucKNjvSq9AuF/view?usp=sharing",
+    date: "26.05.11",
   },
   {
     id: 1,
@@ -26,8 +26,8 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1ZkHgfdtyeFx4e8KOWxghZSZ4iRikWj79/view?usp=sharing",
-    date: "26.05.10",
+    downloadUrl: "https://drive.google.com/file/d/1UT72-VS96i_34mRWy_LiOshS5xIhDnZ1/view?usp=sharing",
+    date: "26.05.11",
   },
   {
     id: 2,
@@ -365,8 +365,8 @@ export default function App() {
               </div>
               <div className="space-y-3">
                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
-                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.10</span>
-                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 일반리절트 다음랭크까지 차이 숫자 및 인랭 점수차이 위치 오류난거 hotfix</p>
+                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.11</span>
+                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 점수차이나 인랭 총 인원수에 쓰이는 제일 작은 숫자 표시부분 수정,  hotfix / WMII PLAY SKIN beatroaja버전에서 class gauge표시가 어긋나 있던걸 수정 </p>
                 </div>  
                   <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.10</span>
