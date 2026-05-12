@@ -14,8 +14,8 @@ const SKINS = [
       "/images/skins/wmii-result-beatoraja/03.webp",
       "/images/skins/wmii-result-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1dOSuvKiQtgxV6CVHkJVoucKNjvSq9AuF/view?usp=sharing",
-    date: "26.05.11",
+    downloadUrl: "https://drive.google.com/file/d/1YJGQt5Ad2YudsdsN4jbWSMkgK2eq4o-v/view?usp=sharing",
+    date: "26.05.13",
   },
   {
     id: 1,
@@ -26,8 +26,8 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1UT72-VS96i_34mRWy_LiOshS5xIhDnZ1/view?usp=sharing",
-    date: "26.05.11",
+    downloadUrl: "https://drive.google.com/file/d/1R2YJ7cbEK1EBBoSeeXDlip_FsxM3zjiL/view?usp=sharing",
+    date: "26.05.13",
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const SKINS = [
       "/images/skins/wmii-play-lr2/01.webp",
       "/images/skins/wmii-play-lr2/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1c5GMCCe_iX0BXrDhHUbZ2BIFtpiQun40/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/file/d/1dZN8hk3cTjl5FLFSZkdBXuI11HcDe5yJ/view?usp=sharing",
     date: "26.05.10",
   },
   {
@@ -364,6 +364,10 @@ export default function App() {
                 <h3 className="text-sm font-black tracking-widest text-slate-900 uppercase">Update</h3>
               </div>
               <div className="space-y-3">
+                             <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.13</span>
+                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 코스 리절트 디자인 변경 / WMII PLAY SKIN LR2/beatoraja 공통으로 mine노트 이미지가 잘못 지정되있던것을 수정</p>
+                </div>  
                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.11</span>
                   <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 점수차이나 인랭 총 인원수에 쓰이는 제일 작은 숫자 표시부분 수정,  hotfix / WMII PLAY SKIN beatroaja버전에서 class gauge표시가 어긋나 있던걸 수정 </p>
