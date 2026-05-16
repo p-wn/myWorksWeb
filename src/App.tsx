@@ -364,23 +364,14 @@ export default function App() {
                 <h3 className="text-sm font-black tracking-widest text-slate-900 uppercase">Update</h3>
               </div>
               <div className="space-y-3">
-                  <div className="space-y-3">
-                  <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+              <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.16</span>
                   <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 기록 갱신시 프레임 빛 들어오는거 더 어둡게 변경, 리플레이 아래 랭킹 인원 폰트표시 수정</p>
                 </div> 
-                             <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+               <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.13</span>
                   <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 코스 리절트 디자인 변경 / WMII PLAY SKIN LR2/beatoraja 공통으로 mine노트 이미지가 잘못 지정되있던것을 수정</p>
-                </div>  
-                <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
-                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.11</span>
-                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 점수차이나 인랭 총 인원수에 쓰이는 제일 작은 숫자 표시부분 수정,  hotfix / WMII PLAY SKIN beatroaja버전에서 class gauge표시가 어긋나 있던걸 수정 </p>
-                </div>  
-                  <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
-                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.10</span>
-                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 코스리절트에서 기능하지않던 타겟 스코어 제거, 그외 미세 수정  </p>
-                </div>  
+                </div>   
                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.10</span>
                   <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 코스 리절트 추가 / WMII PLAY SKIN sp스킨 스코어그래프 그래프 시작지점 1픽셀 틈 수정, 5스테이지짜리 코스를 할 경우 4th stage표시가 이상한것을 수정</p>
