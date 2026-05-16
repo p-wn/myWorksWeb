@@ -338,7 +338,7 @@ export default function App() {
               >
                 New
               </motion.span>
-              <h2 className="text-4xl font-black tracking-tighter uppercase text-slate-900">WMII SP/DP PLAY SKIN</h2>
+              <h2 className="text-4xl font-black tracking-tighter uppercase text-slate-900">WMII RESULT SKIN</h2>
             </div>
             
             <div className="grid md:grid-cols-2 gap-10">
