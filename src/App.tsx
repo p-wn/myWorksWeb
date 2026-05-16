@@ -14,8 +14,8 @@ const SKINS = [
       "/images/skins/wmii-result-beatoraja/03.webp",
       "/images/skins/wmii-result-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1Fdd3miXAULDUyzNeo1TO6hJCEVEiPK0c/view?usp=sharing",
-    date: "26.05.13",
+    downloadUrl: "https://drive.google.com/file/d/1MukW1skL68GIEU6bMTG3nQYxvJnh6MTL/view?usp=sharing",
+    date: "26.05.16",
   },
   {
     id: 1,
@@ -39,7 +39,7 @@ const SKINS = [
       "/images/skins/wmii-play-lr2/02.webp",
     ],
     downloadUrl: "https://drive.google.com/file/d/1dZN8hk3cTjl5FLFSZkdBXuI11HcDe5yJ/view?usp=sharing",
-    date: "26.05.10",
+    date: "26.05.13",
   },
   {
     id: 3,
@@ -364,6 +364,11 @@ export default function App() {
                 <h3 className="text-sm font-black tracking-widest text-slate-900 uppercase">Update</h3>
               </div>
               <div className="space-y-3">
+                  <div className="space-y-3">
+                  <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.16</span>
+                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 기록 갱신시 프레임 빛 들어오는거 더 어둡게 변경, 리플레이 아래 랭킹 인원 폰트표시 수정</p>
+                </div> 
                              <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.13</span>
                   <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 코스 리절트 디자인 변경 / WMII PLAY SKIN LR2/beatoraja 공통으로 mine노트 이미지가 잘못 지정되있던것을 수정</p>
