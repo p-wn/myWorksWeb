@@ -14,8 +14,8 @@ const SKINS = [
       "/images/skins/wmii-result-beatoraja/03.webp",
       "/images/skins/wmii-result-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1MukW1skL68GIEU6bMTG3nQYxvJnh6MTL/view?usp=sharing",
-    date: "26.05.16",
+    downloadUrl: "https://drive.google.com/file/d/1INRVF-BL1Zh6yJYjtyQqOnI9OBzWfeZs/view?usp=sharing",
+    date: "26.05.17",
   },
   {
     id: 1,
@@ -364,6 +364,10 @@ export default function App() {
                 <h3 className="text-sm font-black tracking-widest text-slate-900 uppercase">Update</h3>
               </div>
               <div className="space-y-3">
+                              <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.17</span>
+                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN Solomon난이도표(✡)마크 폰트 대응. 플레이스킨은 lr2skin기반이라 적용못함</p>
+                </div> 
               <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.16</span>
                   <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 기록 갱신시 프레임 빛 들어오는거 더 어둡게 변경, 리플레이 아래 랭킹 인원 폰트표시 수정</p>
