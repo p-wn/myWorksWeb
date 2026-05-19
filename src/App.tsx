@@ -26,8 +26,8 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1OQwxru6f3MwYwMOVGRsbZ2m-crW-RZz3/view?usp=sharing",
-    date: "26.05.13",
+    downloadUrl: "https://drive.google.com/file/d/1HE5IbT9wjon5EEaLdZsXkImmnYV9f58R/view?usp=sharing",
+    date: "26.05.20",
   },
   {
     id: 2,
@@ -38,8 +38,8 @@ const SKINS = [
       "/images/skins/wmii-play-lr2/01.webp",
       "/images/skins/wmii-play-lr2/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1dZN8hk3cTjl5FLFSZkdBXuI11HcDe5yJ/view?usp=sharing",
-    date: "26.05.13",
+    downloadUrl: "https://drive.google.com/file/d/1Oug6682OTU5Jg7PmNVs49eZIqLKcjIIl/view?usp=sharing",
+    date: "26.05.20",
   },
   {
     id: 3,
@@ -364,9 +364,13 @@ export default function App() {
                 <h3 className="text-sm font-black tracking-widest text-slate-900 uppercase">Update</h3>
               </div>
               <div className="space-y-3">
+                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.20</span>
+                  <p className="text-sm text-slate-600 font-medium">WMII PLAY SKIN 새로운 Bomb 파츠 추가</p>
+                </div> 
                               <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.17</span>
-                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN Solomon난이도표(✡)마크 폰트 대응. 플레이스킨은 lr2skin기반이라 적용못함</p>
+                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN Solomon난이도표(✡)마크 폰트 대응</p>
                 </div> 
               <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.16</span>
