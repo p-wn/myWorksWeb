@@ -14,7 +14,7 @@ const SKINS = [
       "/images/skins/wmii-result-beatoraja/03.webp",
       "/images/skins/wmii-result-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/19DiwxkLf5pnGSizg-0CSc8DDtBP4NPcN/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/file/d/1C2do_Dw54qRijV-qvgzNUmZmGIEDlbBh/view?usp=sharing",
     date: "26.05.21",
   },
   {
@@ -366,7 +366,7 @@ export default function App() {
               <div className="space-y-3">
                        <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.21</span>
-                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 최초 플레이시 미스카운트부분 공백에 막대가 뜨도록 변경, max시 max+0000표시되도록 수정, 코스리절트 작은숫자관련 칸 크기 수정</p>
+                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN ir이름 중앙정렬로 변경, 최초 플레이시 미스카운트부분 공백에 막대가 뜨도록 변경, max시 max+0000표시되도록 수정, 코스리절트 작은숫자관련 칸 크기 수정</p>
                 </div> 
                  <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.20</span>
