@@ -26,8 +26,8 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1HE5IbT9wjon5EEaLdZsXkImmnYV9f58R/view?usp=sharing",
-    date: "26.05.20",
+    downloadUrl: "https://drive.google.com/file/d/1s0z7xYZ7GfpjKsDdHP9na8xWO02ML0-H/view?usp=sharing",
+    date: "26.05.22",
   },
   {
     id: 2,
@@ -38,8 +38,8 @@ const SKINS = [
       "/images/skins/wmii-play-lr2/01.webp",
       "/images/skins/wmii-play-lr2/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1Oug6682OTU5Jg7PmNVs49eZIqLKcjIIl/view?usp=sharing",
-    date: "26.05.20",
+    downloadUrl: "https://drive.google.com/file/d/1mqNbCxNtyIm96gOnXCY3oZ-h3OFZ36cX/view?usp=sharing",
+    date: "26.05.22",
   },
   {
     id: 3,
@@ -364,13 +364,13 @@ export default function App() {
                 <h3 className="text-sm font-black tracking-widest text-slate-900 uppercase">Update</h3>
               </div>
               <div className="space-y-3">
+                                <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.22</span>
+                  <p className="text-sm text-slate-600 font-medium">WMII PLAY SKIN에 Bomb 파츠 shock, twirl추가</p>
+                </div> 
                        <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.21</span>
                   <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN ir이름 중앙정렬로 변경, 최초 플레이시 미스카운트부분 공백에 막대가 뜨도록 변경, max시 max+0000표시되도록 수정, 코스리절트 작은숫자관련 칸 크기 수정</p>
-                </div> 
-                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
-                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.20</span>
-                  <p className="text-sm text-slate-600 font-medium">WMII PLAY SKIN 새로운 Bomb 파츠 추가</p>
                 </div> 
                               <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.17</span>
