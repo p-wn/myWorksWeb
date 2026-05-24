@@ -26,8 +26,8 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1GSd7hjmjT_YDfvM9RPrYSbezc7qhLKQ-/view?usp=sharing",
-    date: "26.05.22",
+    downloadUrl: "https://drive.google.com/file/d/1VH6eXqoGKiKm_DVlOCxX_ktnMZtLUDPw/view?usp=sharing",
+    date: "26.05.25",
   },
   {
     id: 2,
@@ -38,8 +38,8 @@ const SKINS = [
       "/images/skins/wmii-play-lr2/01.webp",
       "/images/skins/wmii-play-lr2/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1ACG6kbnBI3bPFm8LG8elWpcZmsWfvayq/view?usp=sharing",
-    date: "26.05.22",
+    downloadUrl: "https://drive.google.com/file/d/1FG-QXB_NmMb5Qya0CDYNx7f0tLH1tuP3/view?usp=sharing",
+    date: "26.05.25",
   },
   {
     id: 3,
@@ -364,6 +364,10 @@ export default function App() {
                 <h3 className="text-sm font-black tracking-widest text-slate-900 uppercase">Update</h3>
               </div>
               <div className="space-y-3">
+                <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.25</span>
+                  <p className="text-sm text-slate-600 font-medium">WMII PLAY SKIN의 서든플 및 녹색숫자, 고스트 표시 등 작은 숫자들 테두리를 더 굵게 변경</p>
+                </div> 
                                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.22</span>
                   <p className="text-sm text-slate-600 font-medium">WMII PLAY SKIN에 새로운 custom pats로 Bomb종류 shock, twirl추가, 굵은 light 노트 추가</p>
