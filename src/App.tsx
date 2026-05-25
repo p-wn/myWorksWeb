@@ -7,7 +7,7 @@ const SKINS = [
     id: 1,
     title: "WMII RESULT SKIN for beatoraja",
     category: "Beatoraja",
-    description: "Beatoraja용 FHD 리절트스킨. 컨트롤러 select나 키보드 w키로 정보창 전환가능, 코스리절트 사용시 각 스테이지 정보는 WMII 리절트를 사용해야만 표시가능",
+    description: "Beatoraja용 FHD 리절트스킨. 컨트롤러 select(E2)나 키보드 w키로 정보창 전환가능, 코스리절트 사용시 각 스테이지 정보는 WMII 리절트를 사용해야만 표시가능",
     images: [
       "/images/skins/wmii-result-beatoraja/01.webp",
       "/images/skins/wmii-result-beatoraja/02.webp",
