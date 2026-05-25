@@ -38,7 +38,7 @@ const SKINS = [
       "/images/skins/wmii-play-lr2/01.webp",
       "/images/skins/wmii-play-lr2/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1FG-QXB_NmMb5Qya0CDYNx7f0tLH1tuP3/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/file/d/1zeD1CSckGuo0E6Aw4gUnuqfTARxRWEqd/view?usp=sharing",
     date: "26.05.25",
   },
   {
@@ -366,7 +366,7 @@ export default function App() {
               <div className="space-y-3">
                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.25</span>
-                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 긴 테이블 난이도 표기 방법 수정 /  WMII PLAY SKIN의 서든플 및 녹색숫자, 고스트 표시 등 작은 숫자들 테두리를 더 굵게 변경</p>
+                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 긴 테이블 난이도 표기 방법 수정 /  WMII PLAY SKIN의 서든플 및 녹색숫자, 고스트 표시 등 작은 숫자들 테두리를 더 굵게 변경, 비토라자버전 판정문자와 f/s 및 고스트가 같이 움직이게 수정</p>
                 </div> 
                                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.22</span>
