@@ -14,8 +14,8 @@ const SKINS = [
       "/images/skins/wmii-result-beatoraja/03.webp",
       "/images/skins/wmii-result-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1C2do_Dw54qRijV-qvgzNUmZmGIEDlbBh/view?usp=sharing",
-    date: "26.05.21",
+    downloadUrl: "https://drive.google.com/file/d/13mWROSNM0FnbWK7rEgHe8VswCOCzw9WI/view?usp=sharing",
+    date: "26.05.25",
   },
   {
     id: 1,
@@ -366,7 +366,7 @@ export default function App() {
               <div className="space-y-3">
                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.25</span>
-                  <p className="text-sm text-slate-600 font-medium">WMII PLAY SKIN의 서든플 및 녹색숫자, 고스트 표시 등 작은 숫자들 테두리를 더 굵게 변경</p>
+                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 긴 테이블 난이도 표기 방법 수정 /  WMII PLAY SKIN의 서든플 및 녹색숫자, 고스트 표시 등 작은 숫자들 테두리를 더 굵게 변경</p>
                 </div> 
                                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.22</span>
