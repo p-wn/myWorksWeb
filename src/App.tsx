@@ -14,8 +14,8 @@ const SKINS = [
       "/images/skins/wmii-result-beatoraja/03.webp",
       "/images/skins/wmii-result-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/13mWROSNM0FnbWK7rEgHe8VswCOCzw9WI/view?usp=sharing",
-    date: "26.05.25",
+    downloadUrl: "https://drive.google.com/file/d/1Cjkms0v3D4klSheeRo7kWN1z99XdwMoh/view?usp=sharing",
+    date: "26.05.28",
   },
   {
     id: 1,
@@ -364,6 +364,10 @@ export default function App() {
                 <h3 className="text-sm font-black tracking-widest text-slate-900 uppercase">Update</h3>
               </div>
               <div className="space-y-3">
+                   <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                  <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.28</span>
+                  <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 긴 제목이 프레임 침범하는걸 수정, Chart info쪽 내용 변경, expand 상단 도움말 select버튼을 키보드 W 또는 e2버튼이라고 변경</p>
+                </div> 
                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                   <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2 py-0.5 rounded w-fit">26.05.25</span>
                   <p className="text-sm text-slate-600 font-medium">WMII RESULT SKIN 긴 테이블 난이도 표기 방법 수정 /  WMII PLAY SKIN의 서든플 및 녹색숫자, 고스트 표시 등 작은 숫자들 테두리를 더 굵게 변경, 비토라자버전 판정문자와 f/s 및 고스트가 같이 움직이게 수정</p>
