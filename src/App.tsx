@@ -272,7 +272,7 @@ export default function App() {
 
       <main className="pt-16">
         {/* Dynamic Hero Intro Section */}
-        <section className="bg-white pt-12 sm:pt-20 pb-10 sm:pb-16 px-4 sm:px-6 relative overflow-hidden">
+        <section className="bg-white pt-8 sm:pt-14 pb-6 sm:pb-10 px-4 sm:px-6 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-teal-50/20 via-transparent to-transparent pointer-events-none" />
           <div className="max-w-6xl mx-auto relative z-10">
             <div>
@@ -280,7 +280,7 @@ export default function App() {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="inline-flex items-center gap-2 px-4 py-1.5 bg-teal-50 rounded-full text-xs sm:text-sm font-extrabold text-point mb-6 sm:mb-8 border border-teal-100/60 shadow-sm shadow-teal-500/5"
+                className="inline-flex items-center gap-2 px-4 py-1.5 bg-teal-50 rounded-full text-xs sm:text-sm font-extrabold text-point mb-4 sm:mb-6 border border-teal-100/60 shadow-sm shadow-teal-500/5"
               >
                 <Palette size={14} strokeWidth={2.5} />
                 <span className="tracking-wider uppercase">BMS PLAY & RESULT SKIN ARCHIVE</span>
@@ -336,7 +336,7 @@ export default function App() {
         </section>
 
         {/* BMS Skins Section */}
-        <section id="skins" className="py-20 px-6 bg-slate-50 min-h-[60vh] border-t border-slate-100">
+        <section id="skins" className="pt-10 sm:pt-14 pb-16 px-4 sm:px-6 bg-slate-50 min-h-[60vh] border-t border-slate-100">
           <div className="max-w-6xl mx-auto">
             {/* Update */}
             <div className="mb-16 p-6 sm:p-8 bg-white rounded-3xl border border-slate-100 shadow-xl shadow-slate-100/40 relative overflow-hidden">
@@ -347,7 +347,7 @@ export default function App() {
                   <span className="w-2.5 h-2.5 rounded-full bg-point relative" />
                   <h3 className="text-base font-extrabold tracking-tight text-slate-900 uppercase">Changelog & Updates</h3>
                 </div>
-                <span className="text-xs font-mono text-slate-400 font-medium">Scroll down to read all</span>
+         
               </div>
               
               <div className="space-y-4 max-h-[260px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
