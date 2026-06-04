@@ -283,7 +283,7 @@ export default function App() {
                 className="inline-flex items-center gap-2 px-4 py-1.5 bg-teal-50 rounded-full text-xs sm:text-sm font-extrabold text-point mb-4 sm:mb-6 border border-teal-100/60 shadow-sm shadow-teal-500/5"
               >
                 <Palette size={14} strokeWidth={2.5} />
-                <span className="tracking-wider uppercase">BMS PLAY & RESULT SKIN ARCHIVE</span>
+                <span className="tracking-wider uppercase">BMS SKINS</span>
               </motion.div>
 
               {/* Smooth Scroll Shortcut Previews */}
