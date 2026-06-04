@@ -272,7 +272,7 @@ export default function App() {
 
       <main className="pt-16">
         {/* Dynamic Hero Intro Section */}
-        <section className="bg-white pt-24 pb-16 px-6 relative overflow-hidden">
+        <section className="bg-white pt-12 sm:pt-20 pb-10 sm:pb-16 px-4 sm:px-6 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-teal-50/20 via-transparent to-transparent pointer-events-none" />
           <div className="max-w-6xl mx-auto relative z-10">
             <div>
@@ -280,14 +280,14 @@ export default function App() {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="inline-flex items-center gap-2 px-3 py-1 bg-teal-50 rounded-full text-[10px] sm:text-xs font-bold text-point mb-10 border border-teal-100/60"
+                className="inline-flex items-center gap-2 px-4 py-1.5 bg-teal-50 rounded-full text-xs sm:text-sm font-extrabold text-point mb-6 sm:mb-8 border border-teal-100/60 shadow-sm shadow-teal-500/5"
               >
-                <Palette size={12} strokeWidth={2.5} />
-                <span className="tracking-wide uppercase">BMS PLAY & RESULT SKIN ARCHIVE</span>
+                <Palette size={14} strokeWidth={2.5} />
+                <span className="tracking-wider uppercase">BMS PLAY & RESULT SKIN ARCHIVE</span>
               </motion.div>
 
               {/* Smooth Scroll Shortcut Previews */}
-              <div className="grid md:grid-cols-2 gap-8 max-w-4xl mt-2">
+              <div className="grid md:grid-cols-2 gap-4 sm:gap-8 max-w-4xl mt-1">
                 {[1, 2].map((id) => {
                   const skin = SKINS.find(s => s.id === id);
                   if (!skin) return null;
@@ -298,9 +298,9 @@ export default function App() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: id * 0.1 }}
                       onClick={() => scrollToSkin(id)}
-                      className="group cursor-pointer bg-slate-50/80 hover:bg-white rounded-3xl p-5 border border-slate-100 hover:border-teal-500/20 hover:shadow-2xl hover:shadow-teal-500/10 transition-all duration-300 flex flex-col gap-4"
+                      className="group cursor-pointer bg-slate-50/80 hover:bg-white rounded-2xl sm:rounded-3xl p-3.5 sm:p-5 border border-slate-100 hover:border-teal-500/20 hover:shadow-2xl hover:shadow-teal-500/10 transition-all duration-300 flex flex-col gap-3 sm:gap-4"
                     >
-                      <div className="aspect-video w-full rounded-2xl overflow-hidden relative border border-slate-100 shadow-sm">
+                      <div className="aspect-video w-full rounded-xl sm:rounded-2xl overflow-hidden relative border border-slate-100 shadow-sm">
                         <img 
                           src={skin.images[0]} 
                           alt={skin.title} 
@@ -313,17 +313,17 @@ export default function App() {
                           </span>
                         </div>
                       </div>
-                      <div className="flex items-start justify-between gap-4 px-1">
+                      <div className="flex items-start justify-between gap-3 px-1">
                         <div>
-                          <span className="text-[9px] font-black tracking-widest text-point uppercase bg-teal-50 px-2.5 py-1 rounded-lg">
+                          <span className="text-[9px] font-black tracking-widest text-point uppercase bg-teal-50 px-2 py-0.5 rounded-md">
                             {skin.category}
                           </span>
-                          <h4 className="text-md sm:text-lg font-extrabold text-slate-800 group-hover:text-point transition-colors mt-2.5 leading-snug">
+                          <h4 className="text-lg sm:text-xl md:text-2xl font-black text-slate-900 group-hover:text-point transition-colors mt-2 leading-snug tracking-tight">
                             {skin.title}
                           </h4>
-                          <p className="text-xs text-slate-400 mt-1.5 font-medium line-clamp-1">{skin.description}</p>
+                          <p className="text-xs text-slate-400 mt-1 sm:mt-1.5 font-medium line-clamp-1">{skin.description}</p>
                         </div>
-                        <div className="p-2 rounded-xl bg-slate-100 group-hover:bg-teal-50 text-slate-400 group-hover:text-point transition-all self-center">
+                        <div className="p-2 rounded-xl bg-slate-100 group-hover:bg-teal-50 text-slate-400 group-hover:text-point transition-all self-center shrink-0">
                           <ChevronRight size={18} />
                         </div>
                       </div>
