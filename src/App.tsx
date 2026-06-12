@@ -14,8 +14,8 @@ const SKINS = [
       "/images/skins/wmii-result-beatoraja/03.webp",
       "/images/skins/wmii-result-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1pppBhzOunzcva88QPma8eCm2jUMH1d_B/view?usp=sharing",
-    date: "26.06.10",
+    downloadUrl: "https://drive.google.com/file/d/12ZMd6j4YvSB9pNmT62vRUlqTaFo6D2G7/view?usp=sharing",
+    date: "26.06.12",
   },
   {
     id: 2,
@@ -26,8 +26,8 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1gXAxSMX-_k5WNNN6Vkho1F-R-ONbP5I3/view?usp=sharing",
-    date: "26.05.25",
+    downloadUrl: "https://drive.google.com/file/d/1pME7iJ_HiuG0jRlZMDaUHnihzmx5V1Rf/view?usp=sharing",
+    date: "26.06.12",
   },
   {
     id: 3,
@@ -38,8 +38,8 @@ const SKINS = [
       "/images/skins/wmii-play-lr2/01.webp",
       "/images/skins/wmii-play-lr2/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1zeD1CSckGuo0E6Aw4gUnuqfTARxRWEqd/view?usp=sharing",
-    date: "26.05.25",
+    downloadUrl: "https://drive.google.com/file/d/1F45KBM41wx7Phu89Toso4W5JRMdo8ae-/view?usp=sharing",
+    date: "26.06.12",
   },
   {
     id: 4,
@@ -352,6 +352,13 @@ export default function App() {
               
               <div className="space-y-4 max-h-[260px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
                 <div className="relative border-l-2 border-slate-100 pl-4 space-y-6 py-1">
+                 <div className="relative group">
+                    <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
+                    <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                      <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2.5 py-1 rounded-lg w-fit">26.06.12</span>
+                      <p className="text-sm text-slate-700 font-medium">WMII RESULT SKIN에 비토라자 버전 표시기능 추가  /  WMII PLAY SKIN 이펙터 beatoraja/LR2oraja/EndlessDream 변경기능 추가, 마디선 색 변경 별도화, Rate 소수점표시 등 </p>
+                    </div> 
+                  </div>
                   <div className="relative group">
                     <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
