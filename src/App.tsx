@@ -26,8 +26,8 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/132e_al17FQ1VhqI9_7eX3h55l83QZSLf/view?usp=sharing",
-    date: "26.06.13",
+    downloadUrl: "https://drive.google.com/file/d/1ridlNzG3-bDoXXrJ68NfXqfbrR7AL6fK/view?usp=sharing",
+    date: "26.06.14",
   },
   {
     id: 3,
@@ -38,8 +38,8 @@ const SKINS = [
       "/images/skins/wmii-play-lr2/01.webp",
       "/images/skins/wmii-play-lr2/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1cMUBK5IpIAvu3n7Hz8dpgnW_uf4Gp-An/view?usp=sharing",
-    date: "26.06.13",
+    downloadUrl: "https://drive.google.com/file/d/1MT7k2hn7hjMnQ8b_SCHFxXk5a4WaeA-u/view?usp=sharing",
+    date: "26.06.14",
   },
   {
     id: 4,
@@ -352,11 +352,11 @@ export default function App() {
               
               <div className="space-y-4 max-h-[260px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
                 <div className="relative border-l-2 border-slate-100 pl-4 space-y-6 py-1">
-                                   <div className="relative group">
+                                            <div className="relative group">
                     <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
-                      <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2.5 py-1 rounded-lg w-fit">26.06.13</span>
-                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN 기본 마디선 더 밝게 잠수함패치 </p>
+                      <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2.5 py-1 rounded-lg w-fit">26.06.14</span>
+                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN 숏빔추가(기존 숏빔은 베리숏으로 변경), 5/10키 2P일때 34567키를 쓰도록 수정, 기본 마디선 밝기조정 </p>
                     </div> 
                   </div>
                  <div className="relative group">
