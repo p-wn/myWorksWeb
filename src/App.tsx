@@ -14,20 +14,20 @@ const SKINS = [
       "/images/skins/wmii-result-beatoraja/03.webp",
       "/images/skins/wmii-result-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/12ZMd6j4YvSB9pNmT62vRUlqTaFo6D2G7/view?usp=sharing",
-    date: "26.06.12",
+    downloadUrl: "https://drive.google.com/file/d/1vs_iFzV6Zitmzg64yrwci-SY2QIMOCbk/view?usp=sharing",
+    date: "26.06.21",
   },
   {
     id: 2,
     title: "WMII PLAY SKIN for beatoraja",
     category: "Beatoraja",
-    description: "Beatoraja용 FHD 플레이스킨. SP/DP AC비율\nlr2skin기반으로 fast/slow 기능은 judge detail을 off로하고 Display F/S를 On으로 사용하길 권장",
+    description: "Beatoraja용 FHD 플레이스킨. AC SP/DP, WIDE는 SP만 가능",
     images: [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1ridlNzG3-bDoXXrJ68NfXqfbrR7AL6fK/view?usp=sharing",
-    date: "26.06.14",
+    downloadUrl: "https://drive.google.com/file/d/1zsqpraE5VgdllTtMR4jmlQwFCoxisfTD/view?usp=sharing",
+    date: "26.06.21",
   },
   {
     id: 3,
@@ -38,8 +38,8 @@ const SKINS = [
       "/images/skins/wmii-play-lr2/01.webp",
       "/images/skins/wmii-play-lr2/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1MT7k2hn7hjMnQ8b_SCHFxXk5a4WaeA-u/view?usp=sharing",
-    date: "26.06.14",
+    downloadUrl: "https://drive.google.com/file/d/1MGQkVTI9wLe--FgOGQa5skEHGRSc9XKo/view?usp=sharing",
+    date: "26.06.21",
   },
   {
     id: 4,
@@ -352,6 +352,13 @@ export default function App() {
               
               <div className="space-y-4 max-h-[260px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
                 <div className="relative border-l-2 border-slate-100 pl-4 space-y-6 py-1">
+                                            <div className="relative group">
+                    <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
+                    <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                      <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2.5 py-1 rounded-lg w-fit">26.06.21</span>
+                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN WIDE SP스킨추가. AC스킨 턴테이블 픽셀수정 및  dp 스코어그래프창 rate간격 수정. 플레이스킨 경로수정이 많이되서 지우고 새로받는걸 추천. result스킨 filter=1옵션 추가</p>
+                    </div> 
+                  </div>
                                             <div className="relative group">
                     <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
