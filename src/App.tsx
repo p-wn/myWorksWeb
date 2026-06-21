@@ -26,8 +26,8 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1q9haa_Em2cy2qjrnent25BS3vriZOZBg/view?usp=sharing",
-    date: "26.06.21",
+    downloadUrl: "https://drive.google.com/file/d/1xYmjdPcr0FFg3zbZI-YxSKy6wgwrRIJh/view?usp=sharing",
+    date: "26.06.22",
   },
   {
     id: 3,
