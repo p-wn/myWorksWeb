@@ -360,7 +360,6 @@ export default function App() {
                           </h4>
                           <p className="text-xs text-slate-400 mt-1 sm:mt-1.5 font-medium line-clamp-1">{stripMarkdownLinks(skin.description)}</p>
                         </div>
-                        </div>
                         <div className="p-2 rounded-xl bg-slate-100 group-hover:bg-teal-50 text-slate-400 group-hover:text-point transition-all self-center shrink-0">
                           <ChevronRight size={18} />
                         </div>
