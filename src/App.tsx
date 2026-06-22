@@ -45,7 +45,7 @@ const SKINS = [
     id: 4,
     title: "WMIX SKIN SET",
     category: "LunaticRave2",
-    description: "LR2 HD(720P) 스킨 세트",
+    description: "LR2 HD(720P) 스킨 세트.[OpenLR2 PATCH LINK](https://drive.google.com/file/d/1jGERR1WL9ppRqqolMu0QMVYhBVC6xJOM/view?usp=sharing)",
     images: [
       "/images/skins/wmix-hd/01.webp",
       "/images/skins/wmix-hd/02.webp",
@@ -118,6 +118,43 @@ const XLogo = ({ size = 20 }: { size?: number }) => (
   </svg>
 );
 
+const renderDescription = (text: string) => {
+  const parts = [];
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  let lastIndex = 0;
+  let match;
+
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.substring(lastIndex, match.index));
+    }
+    const linkText = match[1];
+    const linkUrl = match[2];
+    parts.push(
+      <a
+        key={match.index}
+        href={linkUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-500 hover:text-blue-600 hover:underline font-bold transition-all inline-flex items-center"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {linkText}
+      </a>
+    );
+    lastIndex = regex.lastIndex;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex));
+  }
+
+  return parts.length > 0 ? parts : text;
+};
+
+const stripMarkdownLinks = (text: string) => {
+  return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1");
+};
 export default function App() {
   const [filter, setFilter] = useState("All");
   const [selectedSkin, setSelectedSkin] = useState<typeof SKINS[0] | null>(null);
@@ -321,7 +358,8 @@ export default function App() {
                           <h4 className="text-lg sm:text-xl md:text-2xl font-black text-slate-900 group-hover:text-point transition-colors mt-2 leading-snug tracking-tight">
                             {skin.title}
                           </h4>
-                          <p className="text-xs text-slate-400 mt-1 sm:mt-1.5 font-medium line-clamp-1">{skin.description}</p>
+                          <p className="text-xs text-slate-400 mt-1 sm:mt-1.5 font-medium line-clamp-1">{stripMarkdownLinks(skin.description)}</p>
+                        </div>
                         </div>
                         <div className="p-2 rounded-xl bg-slate-100 group-hover:bg-teal-50 text-slate-400 group-hover:text-point transition-all self-center shrink-0">
                           <ChevronRight size={18} />
@@ -573,7 +611,7 @@ export default function App() {
                         </span>
                       </div>
                       <p className="text-xs sm:text-sm text-slate-500 mb-6 whitespace-pre-wrap leading-relaxed">
-                        {skin.description}
+                       {renderDescription(skin.description)}
                       </p>
                     </div>
                   </div>
