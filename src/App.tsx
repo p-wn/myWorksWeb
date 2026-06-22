@@ -45,7 +45,7 @@ const SKINS = [
     id: 4,
     title: "WMIX SKIN SET",
     category: "LunaticRave2",
-    description: "LR2 HD(720P) 스킨 세트.[OpenLR2 PATCH LINK](https://drive.google.com/file/d/1jGERR1WL9ppRqqolMu0QMVYhBVC6xJOM/view?usp=sharing)",
+    description: "LR2 HD(720P) 스킨 세트.\n[OpenLR2 PATCH LINK](https://drive.google.com/file/d/1jGERR1WL9ppRqqolMu0QMVYhBVC6xJOM/view?usp=sharing)",
     images: [
       "/images/skins/wmix-hd/01.webp",
       "/images/skins/wmix-hd/02.webp",
