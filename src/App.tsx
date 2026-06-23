@@ -26,7 +26,7 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1gvXJ5NJuGtOS2XsBKazsqs1uD89Y6j2X/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/file/d/1y21xFUF77n_kfC2ASBvK_ZOJnjDjGitt/view?usp=sharing",
     date: "26.06.24",
   },
   {
@@ -391,7 +391,7 @@ export default function App() {
                     <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                       <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2.5 py-1 rounded-lg w-fit">26.06.24</span>
-                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN WIDE스킨 5keys 모드 대응 추가</p>
+                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN WIDE스킨 5keys 모드 대응 추가, BGA 4:3프레임 여백 생겼던것 프레임 비율 조정</p>
                     </div> 
                   </div>
                   <div className="relative group">
