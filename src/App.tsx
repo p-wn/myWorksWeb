@@ -397,8 +397,8 @@ export default function App() {
                               <div className="relative group">
                     <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
-                      <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2.5 py-1 rounded-lg w-fit">26.06.25</span>
-                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN for Beatoraja AC/WIDE 판정문자 깜박임 옵션 추가, 에폴리스풍 판정폰트파츠 추가 </p>
+                      <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2.5 py-1 rounded-lg w-fit">26.06.26</span>
+                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN for Beatoraja AC/WIDE 판정문자 깜박임 옵션 추가, 에폴리스풍,LR2기본 판정폰트파츠 추가 </p>
                     </div> 
                   </div>
                   <div className="relative group">
