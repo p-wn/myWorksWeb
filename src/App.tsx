@@ -26,26 +26,26 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1Su851K2p8FqMY51HWnjrub4GhKZHaaoW/view?usp=sharing",
-    date: "26.06.25",
+    downloadUrl: "https://drive.google.com/file/d/1LwLOxJXW1Evfb7n2zsf0aq5bZcEo7Cvk/view?usp=sharing",
+    date: "26.06.26",
   },
   {
     id: 3,
     title: "WMII PLAY SKIN for LR2FHD",
     category: "LunaticRave2",
-    description: "LR2FHD(1080p) 플레이스킨. SP/DP AC비율",
+    description: "OpenLR2용 FHD 플레이스킨. SP/DP AC비율",
     images: [
       "/images/skins/wmii-play-lr2/01.webp",
       "/images/skins/wmii-play-lr2/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1MGQkVTI9wLe--FgOGQa5skEHGRSc9XKo/view?usp=sharing",
-    date: "26.06.21",
+    downloadUrl: "https://drive.google.com/file/d/18Tf0Fujyu4g8BqpVEQYHgWQX9dlKOIfO/view?usp=sharing",
+    date: "26.06.26",
   },
   {
     id: 4,
     title: "WMIX SKIN SET",
     category: "LunaticRave2",
-    description: "LR2 HD(720P) 스킨 세트.\n[OpenLR2 PATCH LINK](https://drive.google.com/file/d/1jGERR1WL9ppRqqolMu0QMVYhBVC6xJOM/view?usp=sharing)",
+    description: "LR2 HD(720P) 스킨 세트.\n[OpenLR2 PATCH LINK(타 커뮤니티 제작)](https://drive.google.com/file/d/1jGERR1WL9ppRqqolMu0QMVYhBVC6xJOM/view?usp=sharing)",
     images: [
       "/images/skins/wmix-hd/01.webp",
       "/images/skins/wmix-hd/02.webp",
@@ -386,7 +386,14 @@ export default function App() {
                 </div>
               </div>
               <div className="space-y-4 max-h-[260px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
-                <div className="relative border-l-2 border-slate-100 pl-4 space-y-6 py-1">
+                <div className="relative border-l-2 border-slate-100 pl-4 space-y-6 py-1">          
+                                      <div className="relative group">
+                    <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
+                    <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                      <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2.5 py-1 rounded-lg w-fit">26.06.26</span>
+                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN AC DP스킨 2p측이 첫 노트일때 판정문자 반짝이지 않던것 수정, LR2FHD버전을 OpenLR2용으로 수정 </p>
+                    </div> 
+                  </div>
                               <div className="relative group">
                     <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
