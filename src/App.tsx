@@ -118,6 +118,59 @@ const XLogo = ({ size = 20 }: { size?: number }) => (
   </svg>
 );
 
+
+
+
+const AcoffeeButton = ({ isLarge = false }: { isLarge?: boolean }) => {
+  const [imgFailed, setImgFailed] = useState(false);
+
+  if (imgFailed) {
+    if (isLarge) {
+      return (
+        <a
+          href="https://acoffee.shop/d/de61ecac-48f4-41bc-b408-ac04af8fc93e"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-3 px-8 py-4 bg-[#F4A261]/10 text-[#E76F51] hover:text-white rounded-2xl font-bold hover:bg-[#F4A261] transition-all w-full sm:w-auto h-[54px] sm:h-[60px] border border-[#F4A261]/20 shadow-sm"
+        >
+          <Coffee size={20} className="text-[#E76F51] group-hover:text-white" />
+          <span>후원 한잔 (Acoffee)</span>
+        </a>
+      );
+    }
+    return (
+      <a
+        href="https://acoffee.shop/d/de61ecac-48f4-41bc-b408-ac04af8fc93e"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-1.5 px-4 py-2 bg-[#F4A261] text-white rounded-xl hover:bg-[#E76F51] hover:scale-[1.02] active:scale-[0.98] transition-all text-xs font-bold shadow-md shadow-[#F4A261]/15 h-9"
+      >
+        <Coffee size={14} />
+        <span>후원 한잔</span>
+      </a>
+    );
+  }
+
+  return (
+    <a
+      href="https://acoffee.shop/d/de61ecac-48f4-41bc-b408-ac04af8fc93e"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`flex items-center justify-center hover:scale-[1.02] active:scale-[0.98] transition-all select-none ${
+        isLarge ? "w-full sm:w-auto h-[54px] sm:h-[60px]" : "h-9"
+      }`}
+    >
+      <img
+        src="https://acoffee.shop/api-coffee/img/ko/png/Button_S716.png"
+        alt="후원 한잔"
+        className={`${isLarge ? "h-full rounded-2xl" : "h-full rounded-xl"} object-contain shadow-sm`}
+        onError={() => setImgFailed(true)}
+      />
+    </a>
+  );
+};
+
+
 const renderDescription = (text: string) => {
   const parts = [];
   const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
@@ -294,15 +347,18 @@ export default function App() {
           <div className="hidden md:flex gap-8 items-center text-sm font-medium text-slate-600">
             <a href="#skins" className="hover:text-point transition-colors">BMS Skins</a>
             <a href="#contact" className="hover:text-point transition-colors">Contact</a>
-            <a 
-              href="https://ko-fi.com/wisp13" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 px-4 py-2 bg-[#FF5E5B] text-white rounded-xl hover:bg-[#FF5E5B]/90 hover:scale-[1.02] active:scale-[0.98] transition-all text-xs font-bold shadow-md shadow-[#FF5E5B]/15"
-            >
-              <Coffee size={14} />
-              <span>Support on Ko-fi</span>
-            </a>
+            <div className="flex items-center gap-3">
+  <a 
+    href="https://ko-fi.com/wisp13" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="flex items-center gap-1.5 px-4 py-2 bg-[#FF5E5B] text-white rounded-xl hover:bg-[#FF5E5B]/90 hover:scale-[1.02] active:scale-[0.98] transition-all text-xs font-bold shadow-md shadow-[#FF5E5B]/15 h-9"
+  >
+    <Coffee size={14} />
+    <span>Support on Ko-fi</span>
+  </a>
+  <AcoffeeButton />
+</div>
           </div>
         </div>
       </nav>
