@@ -718,24 +718,25 @@ export default function App() {
         <section id="contact" className="py-24 px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-12">Contact</h2>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a 
-                href="https://x.com/wisp_13"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 px-8 py-4 bg-slate-50 rounded-2xl font-semibold hover:bg-slate-900 hover:text-white transition-all w-full sm:w-auto"
-              >
-                <XLogo size={20} /> @wisp_13
-              </a>
-              <a 
-                href="https://ko-fi.com/wisp13"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 px-8 py-4 bg-[#FF5E5B]/10 text-[#FF5E5B] rounded-2xl font-semibold hover:bg-[#FF5E5B] hover:text-white transition-all w-full sm:w-auto select-none"
-              >
-                <Coffee size={20} /> Support on Ko-fi
-              </a>
-            </div>
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+  <a 
+    href="https://x.com/wisp_13"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center gap-3 px-8 py-4 bg-slate-50 rounded-2xl font-semibold hover:bg-slate-900 hover:text-white transition-all w-full sm:w-auto h-[54px] sm:h-[60px]"
+  >
+    <XLogo size={20} /> @wisp_13
+  </a>
+  <a 
+    href="https://ko-fi.com/wisp13"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center gap-3 px-8 py-4 bg-[#FF5E5B]/10 text-[#FF5E5B] rounded-2xl font-semibold hover:bg-[#FF5E5B] hover:text-white transition-all w-full sm:w-auto select-none h-[54px] sm:h-[60px]"
+  >
+    <Coffee size={20} /> Support on Ko-fi
+  </a>
+  <AcoffeeButton isLarge />
+</div>
           </div>
         </section>
       </main>
