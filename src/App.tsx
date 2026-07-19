@@ -21,7 +21,7 @@ const SKINS = [
     id: 2,
     title: "WMII PLAY SKIN for beatoraja",
     category: "Beatoraja",
-    description: "Beatoraja용 FHD 플레이스킨. AC SP/DP, WIDE는 SP(5/7keys)만 가능",
+    description: "Beatoraja용 FHD 플레이스킨. AC,WIDE 비율, DP는 현재 AC스킨만",
     images: [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
@@ -31,15 +31,15 @@ const SKINS = [
   },
   {
     id: 3,
-    title: "WMII PLAY SKIN for LR2FHD",
+    title: "WMII PLAY SKIN for OpenLR2",
     category: "LunaticRave2",
-    description: "OpenLR2용 FHD 플레이스킨. SP/DP AC비율",
+    description: "OpenLR2 / LR2FHD용 FHD 플레이스킨. AC,WIDE 비율, DP는 현재 AC스킨만",
     images: [
       "/images/skins/wmii-play-lr2/01.webp",
       "/images/skins/wmii-play-lr2/02.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1g1jr5r1LJ5-JAhp63D1WJnl5nsrQWQJV/view?usp=sharing",
-    date: "26.06.26",
+    downloadUrl: "https://drive.google.com/file/d/1juXwSNOb5mutdesVLwYGQqs-Gtlol-yl/view?usp=sharing",
+    date: "26.07.19",
   },
   {
     id: 4,
@@ -442,7 +442,14 @@ export default function App() {
                 </div>
               </div>
               <div className="space-y-4 max-h-[260px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
-                <div className="relative border-l-2 border-slate-100 pl-4 space-y-6 py-1">      
+                <div className="relative border-l-2 border-slate-100 pl-4 space-y-6 py-1">   
+                  <div className="relative group">
+                    <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
+                    <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                      <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2.5 py-1 rounded-lg w-fit">26.07.19</span>
+                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN for OpenLR2용에 WIDE 비율 버전 추가</p>
+                    </div> 
+                  </div>       
                             <div className="relative group">
                     <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
