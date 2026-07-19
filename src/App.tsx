@@ -25,6 +25,7 @@ const SKINS = [
     images: [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
+      "/images/skins/wmii-play-beatoraja/03.webp",
     ],
     downloadUrl: "https://drive.google.com/file/d/1afu_UpDq_UKEgK9B10d7n2tIK_uV41JQ/view?usp=sharing",
     date: "26.07.17",
@@ -37,6 +38,7 @@ const SKINS = [
     images: [
       "/images/skins/wmii-play-lr2/01.webp",
       "/images/skins/wmii-play-lr2/02.webp",
+      "/images/skins/wmii-play-lr2/03.webp",
     ],
     downloadUrl: "https://drive.google.com/file/d/12PXQ28zMEpAeJJgQ-Ox9-usdvC_c4gvd/view?usp=sharing",
     date: "26.07.19",
