@@ -21,27 +21,28 @@ const SKINS = [
     id: 2,
     title: "WMII PLAY SKIN for beatoraja",
     category: "Beatoraja",
-    description: "Beatoraja용 FHD 플레이스킨. AC,WIDE 비율, DP는 현재 AC스킨만",
+    description: "Beatoraja용 FHD 플레이스킨. AC,WIDE 비율, 7,14,5,10 keys 대응",
     images: [
       "/images/skins/wmii-play-beatoraja/01.webp",
       "/images/skins/wmii-play-beatoraja/02.webp",
       "/images/skins/wmii-play-beatoraja/03.webp",
+      "/images/skins/wmii-play-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1afu_UpDq_UKEgK9B10d7n2tIK_uV41JQ/view?usp=sharing",
-    date: "26.07.17",
+    downloadUrl: "https://drive.google.com/file/d/1AKgyT6chZSJxVErOzQa75vYhhj2fZp5q/view?usp=sharing",
+    date: "26.07.27",
   },
   {
     id: 3,
     title: "WMII PLAY SKIN for OpenLR2",
     category: "LunaticRave2",
-    description: "OpenLR2 / LR2FHD용 FHD 플레이스킨. AC,WIDE 비율, DP는 현재 AC스킨만",
+    description: "OpenLR2 / LR2FHD용 FHD 플레이스킨. AC,WIDE 비율, DP는 AC스킨만. G-Battle은 싱글스킨사용, Battle은 AutoPlay용 미완성",
     images: [
       "/images/skins/wmii-play-lr2/01.webp",
       "/images/skins/wmii-play-lr2/02.webp",
       "/images/skins/wmii-play-lr2/03.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1cgR3vi-g5q4or73K8rzWn3vC78bBKD-4/view?usp=sharing",
-    date: "26.07.19",
+    downloadUrl: "https://drive.google.com/file/d/118KuZe2oSiwB5DbURAHrolA6CVbtfC_s/view?usp=sharing",
+    date: "26.07.27",
   },
   {
     id: 4,
@@ -445,6 +446,13 @@ export default function App() {
               </div>
               <div className="space-y-4 max-h-[260px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
                 <div className="relative border-l-2 border-slate-100 pl-4 space-y-6 py-1">   
+                       <div className="relative group">
+                    <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
+                    <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                      <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2.5 py-1 rounded-lg w-fit">26.07.27</span>
+                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN에 다음 랭크까지 남은점수 표시 추가,judge 상세 패널 레이아웃 변경, Beatoraja Wide DP 스킨 추가</p>
+                    </div> 
+                  </div>      
                   <div className="relative group">
                     <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
