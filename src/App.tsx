@@ -28,7 +28,7 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/03.webp",
       "/images/skins/wmii-play-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1UXJJu3mH9w4HViwmLEnNQNgQl9N-AzOF/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/file/d/1ZlTAtKhR20vnZeKpnzfQ_mSXppTqlmfj/view?usp=sharing",
     date: "26.07.28",
   },
   {
@@ -457,7 +457,7 @@ export default function App() {
                     <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                       <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2.5 py-1 rounded-lg w-fit">26.07.28</span>
-                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN for Beatoraja Wide의 다음랭크까지 남은점수 계산식 변경함, AC는 LR2SKIN방식이라 F~E, AAA~MAX 구간에 문제있음</p>
+                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN for Beatoraja Wide의 다음랭크까지 남은점수 계산식 변경함, WIDE DP 스킨이 BACKBMP 있을때 타이틀 안뜨던거 수정</p>
                     </div> 
                   </div>
                        <div className="relative group">
