@@ -28,7 +28,7 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/03.webp",
       "/images/skins/wmii-play-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1pdbY6Mwp6ul-Zye41kprmXwBFY0a8YO4/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/file/d/1wzg3QMfRi8zuGdJaCh-w6rKCbNvq5OD_/view?usp=sharing",
     date: "26.08.06",
   },
   {
@@ -450,7 +450,7 @@ export default function App() {
                     <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                       <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2.5 py-1 rounded-lg w-fit">26.08.06</span>
-                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN for Beatoraja 곡 종료시 레인커버 내려오는 연출 좀 더 자연스럽게 조정 </p>
+                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN for Beatoraja  ac스킨 메인프레임 하단 조립 타이밍 및 곡 종료시 레인커버 내려오는 연출 좀 더 자연스럽게 조정 </p>
                     </div> 
                   </div>  
                   <div className="relative group">
