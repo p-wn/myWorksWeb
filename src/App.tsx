@@ -28,8 +28,8 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/03.webp",
       "/images/skins/wmii-play-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1wzg3QMfRi8zuGdJaCh-w6rKCbNvq5OD_/view?usp=sharing",
-    date: "26.08.06",
+    downloadUrl: "https://drive.google.com/file/d/1qMw89jkodSz111v6jdfJAdtOt_45mn85/view?usp=sharing",
+    date: "26.08.09",
   },
   {
     id: 3,
@@ -41,8 +41,8 @@ const SKINS = [
       "/images/skins/wmii-play-lr2/02.webp",
       "/images/skins/wmii-play-lr2/03.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/118KuZe2oSiwB5DbURAHrolA6CVbtfC_s/view?usp=sharing",
-    date: "26.07.27",
+    downloadUrl: "https://drive.google.com/file/d/1iEhZOGND5h6hFvQse3SLGiSd4kpcmIdk/view?usp=sharing",
+    date: "26.08.09",
   },
   {
     id: 4,
@@ -446,6 +446,13 @@ export default function App() {
               </div>
               <div className="space-y-4 max-h-[260px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
                 <div className="relative border-l-2 border-slate-100 pl-4 space-y-6 py-1"> 
+                            <div className="relative group">
+                    <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
+                    <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                      <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2.5 py-1 rounded-lg w-fit">26.08.09</span>
+                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN에 봄 종류 추가, openLR2버전에 bomb_cn과 laneGlow 파츠 분리 적용 </p>
+                    </div> 
+                  </div>  
                            <div className="relative group">
                     <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
