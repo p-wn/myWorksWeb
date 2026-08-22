@@ -28,7 +28,7 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/03.webp",
       "/images/skins/wmii-play-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1VIl_yZnuCcRVxG7W4y0vpPjf3jwtPhd2/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/file/d/1pgo1dELqiQ-eeOuU5QU8l2A_w5yRbgrj/view?usp=sharing",
     date: "26.08.22",
   },
   {
@@ -450,7 +450,7 @@ export default function App() {
                     <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                       <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2.5 py-1 rounded-lg w-fit">26.08.22</span>
-                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN for Beatoraja의 Asssist Easy, Hazard의 게이지 색상 분리, 메탈 프레임 느낌 배경 이미지 추가</p>
+                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN for Beatoraja의 Asssist Easy, Hazard의 게이지 색상 분리, 메탈 프레임 느낌 배경 이미지 추가, HCN 노트 표시문제 수정</p>
                     </div> 
                   </div>  
                   <div className="relative group">
