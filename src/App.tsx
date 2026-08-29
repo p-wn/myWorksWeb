@@ -14,8 +14,8 @@ const SKINS = [
       "/images/skins/wmii-result-beatoraja/03.webp",
       "/images/skins/wmii-result-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1Q9RK8N7e7buROHLOpJn-iiS8a52S5Twn/view?usp=sharing",
-    date: "26.08.01",
+    downloadUrl: "https://drive.google.com/file/d/1VKTK9F-UI8ZOxb-us50FQRJG1QmNFFK7/view?usp=sharing",
+    date: "26.08.30",
   },
   {
     id: 2,
@@ -28,8 +28,8 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/03.webp",
       "/images/skins/wmii-play-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1pgo1dELqiQ-eeOuU5QU8l2A_w5yRbgrj/view?usp=sharing",
-    date: "26.08.22",
+    downloadUrl: "https://drive.google.com/file/d/1u62D1HsAPQCCkib0-J4_aUXmK3rirxEK/view?usp=sharing",
+    date: "26.08.30",
   },
   {
     id: 3,
@@ -446,6 +446,13 @@ export default function App() {
               </div>
               <div className="space-y-4 max-h-[260px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
                 <div className="relative border-l-2 border-slate-100 pl-4 space-y-6 py-1"> 
+                           <div className="relative group">
+                    <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
+                    <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                      <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2.5 py-1 rounded-lg w-fit">26.08.30</span>
+                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN에 bmz용 판정모드를 이펙터에 추가하는 기능 추가, WMII RESULT SKIN에 BMZ용 판정모드 표시 추가 및 F-RAN, MF-RAN표시 추가</p>
+                    </div> 
+                  </div>
                         <div className="relative group">
                     <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
