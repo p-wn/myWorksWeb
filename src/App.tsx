@@ -28,8 +28,8 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/03.webp",
       "/images/skins/wmii-play-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1u62D1HsAPQCCkib0-J4_aUXmK3rirxEK/view?usp=sharing",
-    date: "26.08.30",
+    downloadUrl: "https://drive.google.com/file/d/1UhEo35eMX3c2mwfsHUDpLn5nsBVjOxH7/view?usp=sharing",
+    date: "26.08.31",
   },
   {
     id: 3,
@@ -446,6 +446,13 @@ export default function App() {
               </div>
               <div className="space-y-4 max-h-[260px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
                 <div className="relative border-l-2 border-slate-100 pl-4 space-y-6 py-1"> 
+                        <div className="relative group">
+                    <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
+                    <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                      <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2.5 py-1 rounded-lg w-fit">26.08.31</span>
+                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN AC DP, WIDE DP에 판정선쪽 GLOW가 1P,2P측이 깜박이는 타이밍이 달랐던걸 수정</p>
+                    </div> 
+                  </div>
                            <div className="relative group">
                     <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
