@@ -7,7 +7,7 @@ const SKINS = [
     id: 1,
     title: "WMII RESULT SKIN for beatoraja",
     category: "Beatoraja",
-    description: "Beatoraja용 FHD 리절트스킨.  select키로 정보창 전환가능, 코스리절트 사용시 각 스테이지 정보는 WMII 리절트를 사용해야만 표시가능",
+    description: "Beatoraja & bmz-player용 FHD 리절트스킨.  select키로 정보창 전환가능, 코스리절트 사용시 각 스테이지 정보는 WMII 리절트를 사용해야만 표시가능",
     images: [
       "/images/skins/wmii-result-beatoraja/01.webp",
       "/images/skins/wmii-result-beatoraja/02.webp",
@@ -28,8 +28,8 @@ const SKINS = [
       "/images/skins/wmii-play-beatoraja/03.webp",
       "/images/skins/wmii-play-beatoraja/04.webp",
     ],
-    downloadUrl: "https://drive.google.com/file/d/1UhEo35eMX3c2mwfsHUDpLn5nsBVjOxH7/view?usp=sharing",
-    date: "26.08.31",
+    downloadUrl: "https://drive.google.com/file/d/12yRQpoRiL3Ps8inY3EZN6cyXL5cG8VPc/view?usp=sharingg",
+    date: "26.09.03",
   },
   {
     id: 3,
@@ -446,6 +446,13 @@ export default function App() {
               </div>
               <div className="space-y-4 max-h-[260px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
                 <div className="relative border-l-2 border-slate-100 pl-4 space-y-6 py-1"> 
+                              <div className="relative group">
+                    <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
+                    <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                      <span className="text-xs font-mono font-bold text-point bg-teal-50 px-2.5 py-1 rounded-lg w-fit">26.09.03</span>
+                      <p className="text-sm text-slate-700 font-medium">WMII PLAY SKIN for Beatoraja 다음 랭크까지 점수 ref 변경</p>
+                    </div> 
+                  </div>
                         <div className="relative group">
                     <div className="absolute -left-[21px] top-1.5 w-2 h-2 rounded-full bg-point ring-4 ring-white transition-all group-hover:scale-125" />
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
