@@ -350,18 +350,6 @@ export default function App() {
           <div className="hidden md:flex gap-8 items-center text-sm font-medium text-slate-600">
             <a href="#skins" className="hover:text-point transition-colors">BMS Skins</a>
             <a href="#contact" className="hover:text-point transition-colors">Contact</a>
-            <div className="flex items-center gap-3">
-  <a 
-    href="https://ko-fi.com/wisp13" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="flex items-center gap-1.5 px-4 py-2 bg-[#FF5E5B] text-white rounded-xl hover:bg-[#FF5E5B]/90 hover:scale-[1.02] active:scale-[0.98] transition-all text-xs font-bold shadow-md shadow-[#FF5E5B]/15 h-9"
-  >
-    <Coffee size={14} />
-    <span>Support on Ko-fi</span>
-  </a>
-  <AcoffeeButton />
-</div>
           </div>
         </div>
       </nav>
